@@ -1,9 +1,10 @@
 import React from 'react'
+import {Grid} from '@material-ui/core/';
 
 const HomeScreen = () => {
 return(
   <>
-    <h1>Home page</h1>
+    <Grid style={{height:'100vh'}}>Home page</Grid>
   </>
   )
 }

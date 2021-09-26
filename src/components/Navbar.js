@@ -1,10 +1,9 @@
 import React from 'react'
+import {Grid} from '@material-ui/core/';
 
-const Navbar = () => {
+const Navbar = (props) => {
 return(
-  <>
-    Nav
-  </>
+  <div>Navbar</div>
   )
 }
 export default Navbar
