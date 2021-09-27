@@ -5,6 +5,7 @@ import HomeScreen from './screens/HomeScreen'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
+
 function App() {
   return (
     <>
