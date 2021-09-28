@@ -1,0 +1,79 @@
+<footer>
+      <Box
+        px={{ xs: 3, sm: 10 }}
+        py={{ xs: 5, sm: 10 }}
+        padding="20px"
+        color="black"
+      >
+        <Box>
+          <Grid container spacing={2}>
+            <Grid item>
+              <img
+                src="/images/Logo.jpg"
+                style={{ height: "70px" }}
+                alt="/"
+              ></img>
+            </Grid>
+            <Grid item>
+              <Link href="/">gdsc.bitw@gmail.com</Link>
+            </Grid>
+            <Grid spacing={2} item>
+              L
+            </Grid>
+            <Grid item>T</Grid>
+            <Grid item>I</Grid>
+          </Grid>
+        </Box>
+      </Box>
+      <Box bgcolor="">
+        <Container maxwidth="lg">
+          <Grid container spacing={5}>
+            <Grid item xs={12} sm={4}>
+              <Box borderBottom={1}>
+                <h2>
+                  <strong className="heading blue">CONTENT</strong>
+                </h2>
+              </Box>
+              <Box>
+                <Link href="/" color="">
+                  Home
+                </Link>
+              </Box>
+              <Box>
+                <Link href="/" color="">
+                  Opportunities
+                </Link>
+              </Box>
+              <Box>
+                <Link href="/" color="">
+                  Partners
+                </Link>
+              </Box>
+              <Box>
+                <Link href="/" color="">
+                  Our Team
+                </Link>
+              </Box>
+            </Grid>
+            <Grid item xs={12} sm={4}>
+              <Box borderBottom={1}>
+                <h2>ABOUT US</h2>
+              </Box>
+              <Box>
+                <Link href="/" color="">
+                  BIT,wardha
+                </Link>
+              </Box>
+              <Box>
+                <Link href="/" color="">
+                  RSVP
+                </Link>
+              </Box>
+            </Grid>
+          </Grid>
+          <Box textAlign="center">
+            Google Developer Club &reg; {new Date().getFullYear()}
+          </Box>
+        </Container>
+      </Box>
+    </footer>

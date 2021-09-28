@@ -46,6 +46,20 @@ const HomeScreen = () => {
             <Grid item>image</Grid>
 
           </Grid>
+          <Grid container style={{marginTop:'13rem'}} spacing={2} justifyContent="center"
+          alignItems="center">
+            <Grid item>image</Grid>
+            <Grid item  lg={8} xlg={8} md={12} sm={12}>
+              <strong className="heading blue">MEET</strong>
+              <strong className="heading red"> OUR </strong>
+              <strong className="heading yellow">AMAZING</strong>
+              <strong className="heading green">TEAM</strong>
+              <p className="desc" >Teamwork is the ability to work together towards a common vision.The ability to direct individuals accomplishment toward organizational objectives.It is the fuel that allows common people to attain uncommon results.</p>
+              <Button variant="contained" color="primary" className={classes.btn}>
+            OUR TEAM
+            </Button>
+            </Grid>
+          </Grid>
 
         </Grid>
     </>
