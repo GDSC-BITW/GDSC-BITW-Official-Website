@@ -1,188 +1,103 @@
-import {
-  AppBar,
-  Toolbar,
-  Typography,
-  makeStyles,
-  Button,
-  IconButton,
-  Drawer,
-
-  Grid,
-  MenuItem,
-} from "@material-ui/core";
+import React, { useState } from "react";
+import Link from "@material-ui/core/Link";
+import { makeStyles } from "@material-ui/core/styles";
+import AppBar from "@material-ui/core/AppBar";
+import ToolBar from "@material-ui/core/ToolBar";
+import Grid from "@material-ui/core/Grid";
+import Container from "@material-ui/core/Container";
+import Avatar from "@material-ui/core/Avatar";
+import Hidden from "@material-ui/core/Hidden";
+import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
-import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
+import Divider from "@material-ui/core/Divider";
+import ChevronRightIcon from "@material-ui/icons/ChevronRight";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
 
-
-const headersData = [
-  {
-    label: "Home",
-    href: "/",
-  },
-  {
-    label: "Team",
-    href: "/team",
-  },
-  {
-    label: "Events",
-    href: "/events",
-  },
+const navigationLinks = [
+  { name: "Home", href: "" },
+  { name: "Team", href: "" },
+  { name: "Events", href: "" },
 ];
 
-const useStyles = makeStyles(() => ({
-  header: {
-    color:'black',
-    paddingRight: "79px",
-    paddingLeft: "118px",
-    boxShadow:'none',
-    "@media (max-width: 900px)": {
-      paddingLeft: 0,
-    },
+const useStyles = makeStyles((theme) => ({
+  link: {
+    marginRight: 20,
+    paddingRight: 25
   },
-  logo: {
-    fontFamily: "Work Sans, sans-serif",
-    fontWeight: 600,
-    color: "black",
-    textAlign: "left",
+  avatar: {
+    marginRight: "auto",
+
+    height: 30,
+
   },
-  menuButton: {
-    fontFamily: "Open Sans, sans-serif",
-    fontWeight: 700,
-    size: "18px",
-    marginLeft: "38px",
-  },
-  toolbar: {
-    display: "flex",
-    justifyContent: "space-between",
-  },
-  drawerContainer: {
-    padding: "20px 30px",
-  },
-  selected: {
-    color:'red'
-  }
 }));
 
 export default function Header() {
-
-  const { header, logo, menuButton, toolbar, drawerContainer, selected } = useStyles();
-
-  const [state, setState] = useState({
-    mobileView: false,
-    drawerOpen: false,
-  });
-
-  const { mobileView, drawerOpen } = state;
-
-  useEffect(() => {
-    const setResponsiveness = () => {
-      return window.innerWidth < 900
-        ? setState((prevState) => ({ ...prevState, mobileView: true }))
-        : setState((prevState) => ({ ...prevState, mobileView: false }));
-    };
-
-    setResponsiveness();
-
-    window.addEventListener("resize", () => setResponsiveness());
-
-    return () => {
-      window.removeEventListener("resize", () => setResponsiveness());
-    };
-  }, []);
-
-  const displayDesktop = () => {
-    return (
-      <Toolbar className={toolbar}>
-        {femmecubatorLogo}
-        <div>{getMenuButtons()}</div>
-      </Toolbar>
-    );
-  };
-
-  const displayMobile = () => {
-    const handleDrawerOpen = () =>
-      setState((prevState) => ({ ...prevState, drawerOpen: true }));
-    const handleDrawerClose = () =>
-      setState((prevState) => ({ ...prevState, drawerOpen: false }));
-
-    return (
-      <Toolbar>
-        <IconButton
-          {...{
-            edge: "start",
-            color: "inherit",
-            "aria-label": "menu",
-            "aria-haspopup": "true",
-            onClick: handleDrawerOpen,
-          }}
-        >
-          <MenuIcon />
-        </IconButton>
-
-        <Drawer
-          {...{
-            anchor: "left",
-            open: drawerOpen,
-            onClose: handleDrawerClose,
-          }}
-        >
-          <div className={drawerContainer}>{getDrawerChoices()}</div>
-        </Drawer>
-
-        <div>{femmecubatorLogo}</div>
-      </Toolbar>
-    );
-  };
-
-  const getDrawerChoices = () => {
-    return headersData.map(({ label, href }) => {
-      return (
-        <NavLink activeClassName={selected}
-          {...{
-            component: NavLink,
-            to: href,
-            color: "inherit",
-            style: { textDecoration: "none" },
-            key: label,
-          }}
-        >
-          <MenuItem>{label}</MenuItem>
-        </NavLink>
-      );
-    });
-  };
-
-  const femmecubatorLogo = (
-    <>
-    <img src="https://gdscjiit.live/assets/img/logo.png" style={{height:'70px'}} alt="" ></img>
-    </>
-
-  );
-
-  const getMenuButtons = () => {
-    return headersData.map(({ label, href }) => {
-      return (
-        <Button
-          {...{
-            key: label,
-            color: "inherit",
-            to: href,
-            component: NavLink,
-            className: menuButton,
-          }}
-        >
-          {label}
-        </Button>
-      );
-    });
-  };
-
+  const styles = useStyles();
+  const [open, setOpen] = useState(false);
   return (
-    <header>
-      <AppBar className={header} color="transparent">
-        {mobileView ? displayMobile() : displayDesktop()}
-      </AppBar>
-    </header>
+    <AppBar position="sticky" color="transparent" style={{paddingRight:30, paddingLeft:30, boxShadow:'none'}}>
+
+        <ToolBar disableGutters>
+        <Grid container justifyContent="space-between" alignItems="center">
+          <img
+            src="/images/logo.png"
+            style={{ height: "70px" }}
+            alt="/"
+          ></img>{" "}
+          <Hidden xsDown>
+          <Grid item>
+            {navigationLinks.map((item) => (
+                <Link
+                  className={styles.link}
+                  color="textPrimary"
+                  variant="button"
+                  underline="none"
+                  href={item.href}
+                >
+                  {item.name}
+                </Link>
+            ))}
+            </Grid>
+          </Hidden>
+          </Grid>
+          <Hidden smUp>
+            <IconButton>
+              <MenuIcon onClick={() => setOpen(true)} />
+            </IconButton>
+          </Hidden>
+        </ToolBar>
+
+      <SwipeableDrawer
+        anchor="right"
+        open={open}
+        onOpen={() => setOpen(true)}
+        onClose={() => setOpen(false)}
+      >
+        <div>
+          <IconButton>
+            <ChevronRightIcon onClick={() => setOpen(false)} />
+          </IconButton>
+        </div>
+        <Divider />
+        <List>
+          {navigationLinks.map((item) => (
+            <ListItem>
+              <Link
+                className={styles.link}
+                color="textPrimary"
+                variant="button"
+                underline="none"
+                href={item.href}
+              >
+                {item.name}
+              </Link>
+            </ListItem>
+          ))}
+        </List>
+      </SwipeableDrawer>
+    </AppBar>
   );
 }

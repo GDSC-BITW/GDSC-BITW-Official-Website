@@ -1,0 +1,87 @@
+.animated-box {
+    height: 120px;
+    width: 120px;
+    position: fixed;
+    border-radius: 25% 75% 24% 76%/71% 32% 68% 29%;
+    -webkit-animation: falling 10s cubic-bezier(.04,.34,.58,.82) infinite;
+    animation: falling 10s cubic-bezier(.04,.34,.58,.82) infinite;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    background-color: #ed4b3d;
+    z-index: -1;
+    box-shadow: 0 0 8px 2px rgb(237 75 61 / 45%);
+    top: -20%;
+    right: 7%;
+}
+.circles {
+    background: #ea4335;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+    z-index: -1
+}
+.circle3 {
+    left: 25%;
+    top: 52px;
+    height: 200px;
+    width: 200px;
+    opacity: 0.2;
+    background: #4285f4;
+  }
+  .circle1 {
+    height: 300px;
+    width: 300px;
+    opacity: 0.3;
+    left: -5%;
+    top: 49%;
+    background: #ea4335;
+}
+.circle4 {
+    height: 150px;
+    width: 150px;
+    opacity: .3;
+    right: 15%;
+    top: 61%;
+    background: #0f9d58;
+}
+.circle2 {
+    height: 250px;
+    overflow: hidden;
+    width: 250px;
+    opacity: 0.3;
+    right: -0px;
+    top: -50px;
+    background: #f4b400;
+}
+
+
+@media (max-width: 900px){
+  * {
+    overflow-x: hidden;
+  }
+  .circles.circle3 {
+  left: 18%;
+  top: 52px;
+  height: 150px;
+  width: 150px;
+  opacity: 0.3;
+  background: #4285f4;
+}
+.circle1 {
+  height: 210px;
+  width: 210px;
+  opacity: 0.3;
+  left: -17%;
+  top: 49%;
+  background: #ea4335;
+}
+.circle2 {
+    height: 150px;
+    overflow-x: hidden;
+    width: 150px;
+    opacity: 0.3;
+    right: 20px;
+    top: -50px;
+    background: #f4b400;
+  }
+}

@@ -9,7 +9,8 @@ const useStyles = makeStyles((theme) => ({
   btn: {
     backgroundColor: '#4285F4',
     marginTop:'20px',
-    width:'10rem'
+    width:'10rem',
+    borderRadius:0
   }
 }));
 export default useStyles

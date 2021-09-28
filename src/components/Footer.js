@@ -8,7 +8,7 @@ import YouTube from '@material-ui/icons/YouTube'
 
 const Footer = (props) => {
   return (
-    <footer>
+    <Grid>
      <Container position="center" padding-left="20px">
       <Box padding="10px">
         <Container>
@@ -96,7 +96,7 @@ const Footer = (props) => {
         © Developers Student Club: Bajaj Institute Of Technology,Wardha.All Rights Reserved &reg; {new Date().getFullYear()}
           </Box>
         </Container>
-    </footer>
+    </Grid>
   );
 };
 export default Footer;

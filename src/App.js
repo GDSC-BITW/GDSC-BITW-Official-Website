@@ -13,7 +13,6 @@ function App() {
       <Switch>
         <Route exact path='/' component={HomeScreen} />
       </Switch>
-      <Footer />
     </>
   )
 }
