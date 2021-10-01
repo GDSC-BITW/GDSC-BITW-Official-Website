@@ -16,9 +16,9 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 
 const navigationLinks = [
-  { name: "Home", href: "" },
-  { name: "Team", href: "" },
-  { name: "Events", href: "" },
+  { name: "Home", href: "#" },
+  { name: "Team", href: "#" },
+  { name: "Events", href: "#" },
 ];
 
 const useStyles = makeStyles((theme) => ({
@@ -45,7 +45,6 @@ export default function Header() {
           <img
             src="/images/logo.png"
             style={{ height: "70px" }}
-            alt="/"
           ></img>{" "}
           <Hidden xsDown>
           <Grid item>
@@ -55,7 +54,7 @@ export default function Header() {
                   color="textPrimary"
                   variant="button"
                   underline="none"
-                  href={item.href}
+                  to={item.href}
                 >
                   {item.name}
                 </Link>
@@ -90,7 +89,7 @@ export default function Header() {
                 color="textPrimary"
                 variant="button"
                 underline="none"
-                href={item.href}
+                to={item.href}
               >
                 {item.name}
               </Link>
