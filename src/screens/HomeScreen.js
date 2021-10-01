@@ -59,13 +59,13 @@ const HomeScreen = () => {
           </Button>
         </Grid>
         <Grid item sm={12} xsm={12} lg={4} xlg={4} >
-          <img src="/images/asset1.svg" alt="" className="hero-img" />
+          <img src="/images/asset1.png" alt="" className="hero-img" />
         </Grid>
       </Grid>
 
       <Grid container spacing={0} className="third-section" justifyContent="space-around"> 
         <Grid item sm={12} xsm={12} lg={4} xlg={4} >
-          <img src="/images/asset2.svg" alt="" className="hero-img" />
+          <img src="/images/asset2.png" alt="" className="hero-img" />
         </Grid>
         <Grid item sm={12} xsm={12} lg={6} xlg={8} >
           <strong className="heading blue">OPPORTUNITIES</strong>
