@@ -1,9 +1,8 @@
 {
-  "homepage": "https://Amitpotdukhe.github.io/GDSC-BITW-Official-Website",
   "name": "app",
   "version": "0.1.0",
   "engines": {
-    "node": "6.11.1"
+    "node": "14.16.0"
   },
   "private": true,
   "dependencies": {
