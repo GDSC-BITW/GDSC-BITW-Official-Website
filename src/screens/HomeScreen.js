@@ -22,15 +22,15 @@ const HomeScreen = () => {
             Bajaj Institute of Technology, Wardha
           </div>
           <br/>
-           Google Developer Student Clubs (GDSC) are community groups for college and university students interested in 
-           Google developer technologies. By joining a GDSC, students grow their knowledge in a peer-to-peer learning environment and build 
+           Google Developer Student Clubs (GDSC) are community groups for college and university students interested in
+           Google developer technologies. By joining a GDSC, students grow their knowledge in a peer-to-peer learning environment and build
            solutions for local businesses and their community.
            <br/>
           <Button variant="contained" color="primary" className={classes.btn}>
            Learn More
           </Button>
         </Grid>
-        
+
       </Grid>
 
       <div class="jsx-1703132234 row">

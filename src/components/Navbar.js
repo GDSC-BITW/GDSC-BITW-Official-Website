@@ -38,7 +38,7 @@ export default function Header() {
   const styles = useStyles();
   const [open, setOpen] = useState(false);
   return (
-    <AppBar position="sticky" color="transparent" style={{paddingRight:30, paddingLeft:30, boxShadow:'none'}}>
+    <AppBar position="static" color="transparent" style={{paddingRight:30, paddingLeft:30, boxShadow:'none'}}>
 
         <ToolBar disableGutters>
         <Grid container justifyContent="space-between" alignItems="center">
