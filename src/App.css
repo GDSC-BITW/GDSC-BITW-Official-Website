@@ -23,7 +23,7 @@ body {
     bottom: 0;
     display: block;
     text-align: -webkit-center;
-    max-width: 480px;
+    max-width: 550px;
     text-align: center;
 }
 .heading {
@@ -65,7 +65,7 @@ body {
   text-decoration: underline;
 }
 .row.jsx-1703132234 {
-    margin-top: -10px;
+    margin-top: -10px !important;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 50px;

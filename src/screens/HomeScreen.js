@@ -40,7 +40,7 @@ const HomeScreen = () => {
         <div style={{height:'15px',width:'25%',padding:0,marginLeft:0,marginRight:0,display:'flex' }}class="jsx-1703132234 bg-green"></div>
       </div>
 
-      <Grid container spacing={5} className="sec-section">
+      <Grid container spacing={5} className="sec-section" justifyContent="space-around">
         <Grid item sm={12} xsm={12} lg={6} xlg={8} >
           <strong className="heading blue">OPPORTUNITIES</strong>
           <strong className="heading red"> GDSC</strong>
@@ -61,11 +61,10 @@ const HomeScreen = () => {
         <Grid item sm={12} xsm={12} lg={4} xlg={4} >
           <img src="/images/asset1.svg" alt="" className="hero-img" />
         </Grid>
-
       </Grid>
 
-      <Grid container spacing={5} className="third-section">
-        <Grid item sm={12} xsm={12} lg={5} xlg={4} >
+      <Grid container spacing={0} className="third-section" justifyContent="space-around"> 
+        <Grid item sm={12} xsm={12} lg={4} xlg={4} >
           <img src="/images/asset2.svg" alt="" className="hero-img" />
         </Grid>
         <Grid item sm={12} xsm={12} lg={6} xlg={8} >
