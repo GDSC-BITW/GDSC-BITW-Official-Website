@@ -2,6 +2,9 @@
   "homepage": "https://Amitpotdukhe.github.io/GDSC-BITW-Official-Website",
   "name": "app",
   "version": "0.1.0",
+  "engines": {
+    "node": "6.11.1"
+  },
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.3",
