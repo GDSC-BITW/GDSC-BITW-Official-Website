@@ -15,7 +15,7 @@ const Footer = (props) => {
         <Grid container spacing={2} >
           <Grid item>
             <img
-              src="/images/Logo.jpg"
+              src="/images/logo.png"
               style={{ height: "70px" }}
               alt="/"
             ></img>{" "}
@@ -92,9 +92,10 @@ const Footer = (props) => {
         </Grid>
         </Container>
       </Box>
-      <Box textAlign="center" paddingBottom="10px">
-        © Developers Student Club: Bajaj Institute Of Technology,Wardha.All Rights Reserved &reg; {new Date().getFullYear()}
-          </Box>
+
+        <Box textAlign="center" paddingBottom="10px">
+        © Developers Student Club | Bajaj Institute Of Technology, Wardha. All Rights Reserved &reg; {new Date().getFullYear()}
+        </Box>
         </Container>
     </Grid>
   );
