@@ -12,43 +12,45 @@ import {
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import React, { useState, useEffect } from "react";
-import { Link as RouterLink } from "react-router-dom";
+import {NavLink, Link as RouterLink } from "react-router-dom";
 
 const headersData = [
   {
-    label: "Listings",
-    href: "/listings",
+    label: "Home",
+    href: "/",
   },
   {
-    label: "Mentors",
-    href: "/mentors",
+    label: "Team",
+    href: "team",
   },
   {
-    label: "My Account",
-    href: "/account",
-  },
-  {
-    label: "Log Out",
-    href: "/logout",
-  },
+    label: "Events",
+    href: "events",
+  }
 ];
 
 const useStyles = makeStyles(() => ({
   header: {
+    boxShadow:'none',
     paddingRight: "79px",
     paddingLeft: "118px",
     "@media (max-width: 900px)": {
       paddingLeft: 0,
     },
   },
+  active: {
+    borderBottom: '3px solid #4285F4'
+  },
   logo: {
-    fontFamily: "Work Sans, sans-serif",
+    fontFamily: "Poppins",
     fontWeight: 600,
     color: "#FFFEFE",
     textAlign: "left",
   },
   menuButton: {
-    fontFamily: "Open Sans, sans-serif",
+    textDecoration:'none',
+    color:'black',
+    fontFamily: "Poppins",
     fontWeight: 700,
     size: "18px",
     marginLeft: "38px",
@@ -63,7 +65,7 @@ const useStyles = makeStyles(() => ({
 }));
 
 export default function Header() {
-  const { header, logo, menuButton, toolbar, drawerContainer } = useStyles();
+  const { header, logo, menuButton, toolbar, drawerContainer, active } = useStyles();
 
   const [state, setState] = useState({
     mobileView: false,
@@ -91,8 +93,8 @@ export default function Header() {
   const displayDesktop = () => {
     return (
       <Toolbar className={toolbar}>
-        {femmecubatorLogo}
-        <div>{getMenuButtons()}</div>
+        <img src="/images/logo.png" style={{height:"70px"}} alt="" />
+        <div>{menus()}</div>
       </Toolbar>
     );
   };
@@ -113,10 +115,10 @@ export default function Header() {
               onClose: handleDrawerClose,
             }}
           >
-            <div className={drawerContainer}>{getDrawerChoices()}</div>
+            <div className={drawerContainer}>{menusMobile()}</div>
           </Drawer>
 
-          <div>{femmecubatorLogo}</div>
+          <img src="/images/logo.png" style={{height:"70px"}} alt="" />
           <IconButton
             {...{
               edge: "start",
@@ -174,6 +176,32 @@ export default function Header() {
       );
     });
   };
+
+  const menus = () => {
+    return headersData.map(({ label, href }) => {
+      return (
+        <NavLink activeClassName={active} className= {menuButton}  {...{
+          key: label,
+          color: "inherit",
+          to: href
+
+        }}>{label}</NavLink>
+      )
+    })
+  }
+
+  const menusMobile = () => {
+    return headersData.map(({ label, href }) => {
+      return (
+        <NavLink activeClassName={active} className= {menuButton} style={{display:'flex', flexDirection:'column', margin:'20px'}}  {...{
+          key: label,
+          color: "inherit",
+          to: href
+
+        }}>{label}</NavLink>
+      )
+    })
+  }
 
   return (
     <header>
