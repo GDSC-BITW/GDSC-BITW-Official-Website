@@ -21,11 +21,11 @@ const headersData = [
   },
   {
     label: "Team",
-    href: "/team",
+    href: "team",
   },
   {
     label: "Events",
-    href: "/events",
+    href: "events",
   }
 ];
 
@@ -39,7 +39,6 @@ const useStyles = makeStyles(() => ({
     },
   },
   active: {
-    color: 'red',
     borderBottom: '3px solid #4285F4'
   },
   logo: {
