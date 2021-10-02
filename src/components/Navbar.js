@@ -1,102 +1,185 @@
-import React, { useState } from "react";
-import Link from "@material-ui/core/Link";
-import { makeStyles } from "@material-ui/core/styles";
-import AppBar from "@material-ui/core/AppBar";
-import ToolBar from "@material-ui/core/ToolBar";
-import Grid from "@material-ui/core/Grid";
-import Container from "@material-ui/core/Container";
-import Avatar from "@material-ui/core/Avatar";
-import Hidden from "@material-ui/core/Hidden";
-import IconButton from "@material-ui/core/IconButton";
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  makeStyles,
+  Button,
+  IconButton,
+  Drawer,
+  Link,
+  MenuItem,
+  Grid
+} from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
-import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
-import Divider from "@material-ui/core/Divider";
-import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
+import React, { useState, useEffect } from "react";
+import { Link as RouterLink } from "react-router-dom";
 
-const navigationLinks = [
-  { name: "Home", href: "#" },
-  { name: "Team", href: "#" },
-  { name: "Events", href: "#" },
+const headersData = [
+  {
+    label: "Listings",
+    href: "/listings",
+  },
+  {
+    label: "Mentors",
+    href: "/mentors",
+  },
+  {
+    label: "My Account",
+    href: "/account",
+  },
+  {
+    label: "Log Out",
+    href: "/logout",
+  },
 ];
 
-const useStyles = makeStyles((theme) => ({
-  link: {
-    marginRight: 20,
-    paddingRight: 25
+const useStyles = makeStyles(() => ({
+  header: {
+    paddingRight: "79px",
+    paddingLeft: "118px",
+    "@media (max-width: 900px)": {
+      paddingLeft: 0,
+    },
   },
-  avatar: {
-    marginRight: "auto",
-
-    height: 30,
-
+  logo: {
+    fontFamily: "Work Sans, sans-serif",
+    fontWeight: 600,
+    color: "#FFFEFE",
+    textAlign: "left",
+  },
+  menuButton: {
+    fontFamily: "Open Sans, sans-serif",
+    fontWeight: 700,
+    size: "18px",
+    marginLeft: "38px",
+  },
+  toolbar: {
+    display: "flex",
+    justifyContent: "space-between",
+  },
+  drawerContainer: {
+    padding: "20px 30px",
   },
 }));
 
 export default function Header() {
-  const styles = useStyles();
-  const [open, setOpen] = useState(false);
-  return (
-    <AppBar position="static" color="transparent" style={{paddingRight:30, paddingLeft:30, boxShadow:'none'}}>
+  const { header, logo, menuButton, toolbar, drawerContainer } = useStyles();
 
-        <ToolBar disableGutters>
-        <Grid container justifyContent="space-between" alignItems="center">
-          <img
-            src="/images/logo.png"
-            style={{ height: "70px" }}
-          ></img>{" "}
-          <Hidden xsDown>
-          <Grid item>
-            {navigationLinks.map((item) => (
-                <Link
-                  className={styles.link}
-                  color="textPrimary"
-                  variant="button"
-                  underline="none"
-                  to={item.href}
-                >
-                  {item.name}
-                </Link>
-            ))}
-            </Grid>
-          </Hidden>
-          </Grid>
-          <Hidden smUp>
-            <IconButton>
-              <MenuIcon onClick={() => setOpen(true)} />
-            </IconButton>
-          </Hidden>
-        </ToolBar>
+  const [state, setState] = useState({
+    mobileView: false,
+    drawerOpen: false,
+  });
 
-      <SwipeableDrawer
-        anchor="right"
-        open={open}
-        onOpen={() => setOpen(true)}
-        onClose={() => setOpen(false)}
-      >
-        <div>
-          <IconButton>
-            <ChevronRightIcon onClick={() => setOpen(false)} />
+  const { mobileView, drawerOpen } = state;
+
+  useEffect(() => {
+    const setResponsiveness = () => {
+      return window.innerWidth < 900
+        ? setState((prevState) => ({ ...prevState, mobileView: true }))
+        : setState((prevState) => ({ ...prevState, mobileView: false }));
+    };
+
+    setResponsiveness();
+
+    window.addEventListener("resize", () => setResponsiveness());
+
+    return () => {
+      window.removeEventListener("resize", () => setResponsiveness());
+    };
+  }, []);
+
+  const displayDesktop = () => {
+    return (
+      <Toolbar className={toolbar}>
+        {femmecubatorLogo}
+        <div>{getMenuButtons()}</div>
+      </Toolbar>
+    );
+  };
+
+  const displayMobile = () => {
+    const handleDrawerOpen = () =>
+      setState((prevState) => ({ ...prevState, drawerOpen: true }));
+    const handleDrawerClose = () =>
+      setState((prevState) => ({ ...prevState, drawerOpen: false }));
+
+    return (
+      <Toolbar>
+        <Grid container direction="row" justifyContent="space-between" alignItems="center">
+          <Drawer
+            {...{
+              anchor: "left",
+              open: drawerOpen,
+              onClose: handleDrawerClose,
+            }}
+          >
+            <div className={drawerContainer}>{getDrawerChoices()}</div>
+          </Drawer>
+
+          <div>{femmecubatorLogo}</div>
+          <IconButton
+            {...{
+              edge: "start",
+              color: "transparent",
+              "aria-label": "menu",
+              "aria-haspopup": "true",
+              onClick: handleDrawerOpen,
+            }}
+          >
+            <MenuIcon />
           </IconButton>
-        </div>
-        <Divider />
-        <List>
-          {navigationLinks.map((item) => (
-            <ListItem>
-              <Link
-                className={styles.link}
-                color="textPrimary"
-                variant="button"
-                underline="none"
-                to={item.href}
-              >
-                {item.name}
-              </Link>
-            </ListItem>
-          ))}
-        </List>
-      </SwipeableDrawer>
-    </AppBar>
+        </Grid>
+      </Toolbar>
+    );
+  };
+
+  const getDrawerChoices = () => {
+    return headersData.map(({ label, href }) => {
+      return (
+        <Link
+          {...{
+            component: RouterLink,
+            to: href,
+            color: "inherit",
+            style: { textDecoration: "none" },
+            key: label,
+          }}
+        >
+          <MenuItem>{label}</MenuItem>
+        </Link>
+      );
+    });
+  };
+
+  const femmecubatorLogo = (
+    <Typography variant="h6" component="h1" className={logo}>
+      Femmecubator
+    </Typography>
+  );
+
+  const getMenuButtons = () => {
+    return headersData.map(({ label, href }) => {
+      return (
+        <Button
+          {...{
+            key: label,
+            color: "inherit",
+            to: href,
+            component: RouterLink,
+            className: menuButton,
+          }}
+        >
+          {label}
+        </Button>
+      );
+    });
+  };
+
+  return (
+    <header>
+      <AppBar className={header} color="transparent">
+        {mobileView ? displayMobile() : displayDesktop()}
+      </AppBar>
+    </header>
   );
 }
