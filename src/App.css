@@ -23,7 +23,7 @@ body {
     bottom: 0;
     display: block;
     text-align: -webkit-center;
-    max-width: 550px;
+    max-width: 450px;
     text-align: center;
 }
 .heading {
@@ -43,7 +43,7 @@ body {
   color:#0F9D58
 }
 .hero {
-  height: calc(100vh - 70px);
+  height: 100vh;
   font-weight: 900;
   font-size: 1.2625rem;
   color: #4e4e4e;
