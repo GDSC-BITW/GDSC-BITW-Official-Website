@@ -58,15 +58,27 @@ const HomeScreen = () => {
         </Grid>
       </Grid>
 
+      <Grid container direction="column" className="community" justifyContent="center" alignItems="center">
+        <Grid  >
+          <strong className="heading blue">COMMUNITY</strong>
+          <strong className="heading red"> PARTNERS</strong>
+        </Grid>
+        <Grid lg={6} md={6} sm={12} style={{marginTop:'35px'}}>
+          <img src="/images/CESPITOSE.png" alt="" className="community-logo"/>
+          <img src="/images/FinFlee.png" alt="" className="community-logo finflee-logo" />
+          <img src="/images/ABC.png" alt="" className="community-logo"/>
+        </Grid>
+      </Grid>
+
       <Grid container spacing={0} className="third-section" justifyContent="space-around">
         <Grid item sm={12} xsm={12} lg={4} xlg={4} justifyContent="center" alignItems="center" >
           <img src="../images/asset2.png" alt="aa" className="hero-img" />
         </Grid>
         <Grid item sm={12} xsm={12} lg={6} xlg={8} justifyContent="center" alignItems="center" >
-          <strong className="heading blue">OPPORTUNITIES</strong>
-          <strong className="heading red"> GDSC</strong>
-          <strong className="heading yellow"> PROVIDES</strong>
-          <strong className="heading green"> STUDENT</strong>
+          <strong className="heading blue">MEET</strong>
+          <strong className="heading red"> OUR</strong>
+          <strong className="heading yellow"> AMAZING</strong>
+          <strong className="heading green"> TEAM</strong>
           <p className="desc section-decription" >Teamwork is the ability to work together toward a common vision. The ability to direct individual accomplishments toward organizational objectives. It is the fuel that allows common people to attain uncommon results.</p>
           <Button variant="contained" color="primary" className={classes.btn}>
            Our Team

@@ -8,7 +8,7 @@ return(
     <div className="circles circle1"></div>
     <div className="circles circle4"></div>
     <div className="circles circle2"></div>
-    <div className="animated-box"></div>
+    
   </div>
   )
 }

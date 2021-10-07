@@ -21,11 +21,11 @@ const headersData = [
   },
   {
     label: "Team",
-    href: "team",
+    href: "/team/",
   },
   {
     label: "Events",
-    href: "events",
+    href: "/events/",
   }
 ];
 
@@ -93,7 +93,7 @@ export default function Header() {
   const displayDesktop = () => {
     return (
       <Toolbar className={toolbar}>
-        <img src="/images/logo.png" style={{height:"70px"}} alt="" />
+        <img src="/images/logo.png" style={{height:"70px", marginLeft:"-50px"}} alt="" />
         <div>{menus()}</div>
       </Toolbar>
     );

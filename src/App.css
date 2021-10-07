@@ -52,7 +52,9 @@ body {
   justify-content: center;
   align-items: center;
   max-width: 100vw;
+  padding-left: 11vw;
   margin-bottom: 80px !important;
+  padding-right: 12vw
 }
 .line {
   display: flex
@@ -156,4 +158,22 @@ body {
     text-align: center;
     margin-top: 20px
   }
+  .community {
+    display: flex;
+    padding-left: 9vw;
+    padding-right: 9vw;
+  }
+  .community-logo {
+    height: 80px !important;
+    margin-left: 30px;
+    padding-top: 20px
+  }
+  
+}
+.community-logo {
+  height: 100px;
+  margin-right: 60px
+}
+.community {
+  margin-bottom: 8vh;
 }

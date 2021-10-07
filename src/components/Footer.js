@@ -9,14 +9,14 @@ import YouTube from '@material-ui/icons/YouTube'
 const Footer = (props) => {
   return (
     <Grid>
-     <Container position="center" padding-left="20px">
-      <Box padding="10px">
+     <Container position="center" padding-left="20px" style={{overflowY:"hidden"}}>
+      <Box>
         <Container>
-        <Grid container spacing={2} >
+        <Grid container alignItems="center">
           <Grid item>
             <img
               src="/images/logo.png"
-              style={{ height: "70px" }}
+              style={{ height: "60px" }}
               alt="/"
             ></img>{" "}
           </Grid>
@@ -24,50 +24,53 @@ const Footer = (props) => {
           <Grid item> <strong color="black"><bold>BITW</bold></strong></Grid>
         </Grid>
         </Container>
+
         <Container>
-        <Grid container spacing={2}>
-          <Grid item>
-            <Link href="/">gdsc.bitw@gmail.com</Link>
+        <Grid container style={{ marginBottom:'20px'}}>
+          <Grid item style={{ marginBottom:'20px'}}>
+            <Link href="/" style={{color:'black', marginBottom:'20px'}}>gdsc.bitw@gmail.com</Link>
           </Grid>
-          <Grid item>
-            <LinkedIn />
-          </Grid>
-          <Grid item>
-            <Instagram />
-          </Grid>
-          <Grid item>
-            <Twitter />
-          </Grid>
-          <Grid item>
-            <YouTube />
-          </Grid>
+          <Grid container direction="row">
+            <Grid item>
+              <LinkedIn />
+            </Grid>
+            <Grid item>
+              <Instagram />
+            </Grid>
+            <Grid item>
+              <Twitter />
+            </Grid>
+            <Grid item>
+              <YouTube />
+            </Grid>
+        </Grid>
         </Grid>
         </Container>
         <Container>
-        <Grid container spacing={2}>
+        <Grid container>
           <Grid item xs={12} sm={4}>
             <Box borderBottom={1}>
               <h2>
-                <strong className="heading green">CONTENT</strong>
+                <strong style={{fontSize:"1.6625rem"}} className="heading green">CONTENT</strong>
               </h2>
             </Box>
             <Box>
-              <Link href="/" color="">
+              <Link href="/" color="" style={{color:"black"}}>
                 Home
               </Link>
             </Box>
             <Box>
-              <Link href="/" color="">
+              <Link href="/" color="" style={{color:"black"}}>
                 Opportunities
               </Link>
             </Box>
             <Box>
-              <Link href="/" color="">
+              <Link href="/" color="" style={{color:"black"}}>
                 Partners
               </Link>
             </Box>
             <Box>
-              <Link href="/" color="">
+              <Link href="/" color="" style={{color:"black"}}>
                 Our Team
               </Link>
             </Box>
@@ -75,16 +78,16 @@ const Footer = (props) => {
           <Grid item xs={12} sm={4}>
             <Box borderBottom={1}>
             <h2>
-                <strong className="heading green">ABOUT US</strong>
+                <strong style={{fontSize:"1.6625rem"}} className="heading yellow">ABOUT US</strong>
               </h2>
             </Box>
             <Box>
-              <Link href="/" color="">
+              <Link href="/" color="" style={{color:"black"}}>
                 BIT,wardha
               </Link>
             </Box>
             <Box>
-              <Link href="/" color="">
+              <Link href="/" color="" style={{color:"black"}}>
                 RSVP
               </Link>
             </Box>
@@ -93,7 +96,7 @@ const Footer = (props) => {
         </Container>
       </Box>
 
-        <Box textAlign="center" paddingBottom="10px">
+        <Box textAlign="center" paddingBottom="10px" marginTop="30px" marginBottom="10px">
         © Developers Student Club | Bajaj Institute Of Technology, Wardha. All Rights Reserved &reg; {new Date().getFullYear()}
         </Box>
         </Container>

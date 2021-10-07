@@ -17,7 +17,7 @@ function App() {
         <Route path='/team' component={TeamScreen} />
         <Route path='/events' component={EventsScreen} />
       </Switch>
-
+      <Footer />
     </>
   )
 }
