@@ -52,9 +52,13 @@ body {
   justify-content: center;
   align-items: center;
   max-width: 100vw;
-  padding-left: 11vw;
+  padding-left: 9vw;
   margin-bottom: 80px !important;
-  padding-right: 12vw
+  padding-right: 9vw
+}
+.team-block {
+  padding-left: 9vw;
+  padding-right: 9vw
 }
 .line {
   display: flex
@@ -116,6 +120,11 @@ body {
   max-width: 100vw;
   margin-bottom: 80px !important;
 }
+.team-section {
+  padding-left: 9vw;
+  padding-right: 9vw;
+  margin-bottom: 25vh
+}
 .desc {
   font-weight: 900;
   font-size: 1.0625rem;
@@ -151,6 +160,15 @@ body {
     padding-right: 9vw;
     flex-direction: column-reverse;
   }
+  .team-section {
+    padding-left: 9vw;
+    padding-right: 9vw;
+    margin-bottom: 19vh;
+    flex-direction: column
+  }
+  .teamimg {
+    width: 300px !important
+  }
   .hero-img {
     display: block;
     text-align: -webkit-center;
@@ -168,7 +186,7 @@ body {
     margin-left: 30px;
     padding-top: 20px
   }
-  
+
 }
 .community-logo {
   height: 100px;
@@ -176,4 +194,14 @@ body {
 }
 .community {
   margin-bottom: 8vh;
+}
+.team-bg {
+  height: 90px;
+  width: 90px
+}
+.team-block {
+  overflow-y: hidden
+}
+.social {
+  color:grey
 }

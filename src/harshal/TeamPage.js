@@ -35,7 +35,7 @@ const TeamPage = () => {
         <div className="second-section">
 
             {/* ================================================= -- Lead-Section -- ======================================== */}
-            <Grid container className="second-section leadSection" justifyContent="start" spacing={7}>
+            <Grid container className="second-section leadSection" justifyContent="start" >
                 <Grid item md={10}><div className="title blue"><strong>CLUB LEAD</strong></div></Grid>
                 {clubLead.map((user) => {
                     return (
@@ -47,7 +47,7 @@ const TeamPage = () => {
             {/* ================================================= -- Core-Team-Section -- ======================================== */}
 
 
-            <Grid container className="coreTeam" justifyContent="start" spacing={7}>
+            <Grid container className="coreTeam" justifyContent="start" >
                 <Grid item md={10}><div className="title red"><strong>CORE TEAM</strong></div></Grid>
                 {coreTeam.map((user) => {
                     return (
@@ -62,7 +62,7 @@ const TeamPage = () => {
                 <Grid item md={10}><div className="title green"><strong>MENTOR TEAM</strong></div></Grid>
                 {mentor.map((user) => {
                     return (
-                        <Grid item md={6}><div className="profile-container"> <Profile name={user.Name} role={user.Post} bgColor={user.backGround} /></div></Grid>
+                        <Grid item md={4} lg={4} xlg={4} sm={11}><div className="profile-container"> <Profile name={user.Name} role={user.Post} bgColor={user.backGround} /></div></Grid>
                     );
                 })}
             </Grid>

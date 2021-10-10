@@ -21,11 +21,11 @@ const headersData = [
   },
   {
     label: "Team",
-    href: "/team/",
+    href: "/team",
   },
   {
     label: "Events",
-    href: "/events/",
+    href: "/events",
   }
 ];
 
@@ -39,7 +39,7 @@ const useStyles = makeStyles(() => ({
     },
   },
   active: {
-    borderBottom: '3px solid #4285F4'
+    color:'#F4B400 !important'
   },
   logo: {
     fontFamily: "Poppins",
@@ -180,12 +180,14 @@ export default function Header() {
   const menus = () => {
     return headersData.map(({ label, href }) => {
       return (
+
         <NavLink activeClassName={active} className= {menuButton}  {...{
           key: label,
           color: "inherit",
           to: href
 
         }}>{label}</NavLink>
+
       )
     })
   }

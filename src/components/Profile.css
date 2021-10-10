@@ -1,0 +1,33 @@
+.avtar {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    overflow-y: hidden
+}
+
+.card-body {
+    box-sizing: border-box;
+    padding-left: 9%;
+
+}
+.profile-card {
+  width: 30vw;
+  height: 25vh;
+}
+.avtar-title {
+    font-size: 14px;
+    letter-spacing: 0.07em;
+    color:#4285F4
+}
+
+.avtar-post {
+    font-size: 14px;
+    letter-spacing: 0.07em;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: start;
+    gap: 1.5rem;
+    cursor: pointer;
+}
