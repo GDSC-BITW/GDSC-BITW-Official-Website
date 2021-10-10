@@ -55,6 +55,7 @@ const HomeScreen = () => {
         </Grid>
         <Grid item sm={12} xsm={12} lg={4} xlg={4} justifyContent="center" alignItems="center">
           <img src="../images/asset1.png" alt="" className="hero-img" />
+
         </Grid>
       </Grid>
 
