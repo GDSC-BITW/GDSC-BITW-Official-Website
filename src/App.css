@@ -205,3 +205,14 @@ body {
 .social {
   color:grey
 }
+.yellow-2 {
+    position: absolute;
+    right: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 40vh;
+    width: 30vw;
+    
+}

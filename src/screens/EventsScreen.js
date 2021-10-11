@@ -2,7 +2,7 @@ import React from 'react'
 
 const Events = (props) => {
 return(
-  <div>events</div> 
+  <div style={{height:'40vh'}}></div> 
   )
 }
 export default Events

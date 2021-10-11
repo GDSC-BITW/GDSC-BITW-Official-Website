@@ -32,16 +32,16 @@ const Footer = (props) => {
           </Grid>
           <Grid container direction="row">
             <Grid item>
-              <LinkedIn />
+              <LinkedIn className="social" style={{paddingRight:'7px'}}/>
             </Grid>
             <Grid item>
-              <Instagram />
+              <Instagram className="social" style={{paddingRight:'7px'}}/>
             </Grid>
             <Grid item>
-              <Twitter />
+              <Twitter className="social" style={{paddingRight:'7px'}}/>
             </Grid>
             <Grid item>
-              <YouTube />
+              <YouTube className="social" style={{paddingRight:'7px'}}/>
             </Grid>
         </Grid>
         </Grid>
@@ -94,12 +94,14 @@ const Footer = (props) => {
           </Grid>
         </Grid>
         </Container>
+
       </Box>
 
         <Box textAlign="center" paddingBottom="10px" marginTop="30px" marginBottom="10px">
         © Developers Student Club | Bajaj Institute Of Technology, Wardha. All Rights Reserved &reg; {new Date().getFullYear()}
         </Box>
         </Container>
+
     </Grid>
   );
 };

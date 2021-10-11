@@ -39,7 +39,7 @@ const useStyles = makeStyles(() => ({
     },
   },
   active: {
-    color:'#F4B400 !important'
+    fonntWeight:600
   },
   logo: {
     fontFamily: "Poppins",
@@ -193,14 +193,20 @@ export default function Header() {
   }
 
   const menusMobile = () => {
+
     return headersData.map(({ label, href }) => {
       return (
-        <NavLink activeClassName={active} className= {menuButton} style={{display:'flex', flexDirection:'column', margin:'20px'}}  {...{
-          key: label,
-          color: "inherit",
-          to: href
+        <Grid>
 
-        }}>{label}</NavLink>
+          <NavLink activeClassName={active} onClick={()=>setState((prevState) => ({ ...prevState, drawerOpen: false }))} className= {menuButton} style={{display:'flex', flexDirection:'column', margin:'20px'}}  {...{
+            key: label,
+            color: "inherit",
+            to: href
+
+          }}>{label}</NavLink>
+        
+        </Grid>
+
       )
     })
   }

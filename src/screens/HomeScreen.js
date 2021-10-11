@@ -2,6 +2,7 @@ import React from 'react'
 import {Grid, Typography, Button, Item} from '@material-ui/core/';
 import useStyles from '../commonStyles'
 import Background from '../components/bg/Background'
+import {NavLink, Link } from "react-router-dom";
 import FallingCircle from '../components/bg/FallingCircle'
 
 const HomeScreen = () => {
@@ -11,6 +12,7 @@ const HomeScreen = () => {
     <>
       <Background />
       <FallingCircle />
+
       <Grid container className="hero" direction="column" justifyContent="center" alignItems="center">
         <Grid lg={8} xl={8} md={8} sm={12} xsm={12} justifyContent="center" alignItems="center">
           <div>
@@ -64,7 +66,7 @@ const HomeScreen = () => {
           <strong className="heading blue">COMMUNITY</strong>
           <strong className="heading red"> PARTNERS</strong>
         </Grid>
-        <Grid lg={6} md={6} sm={12} style={{marginTop:'35px'}}>
+        <Grid lg={10} md={10} sm={12} style={{marginTop:'35px', marginBottom:'40px'}}>
           <img src="/images/CESPITOSE.png" alt="" className="community-logo"/>
           <img src="/images/FinFlee.png" alt="" className="community-logo finflee-logo" />
           <img src="/images/ABC.png" alt="" className="community-logo"/>
@@ -82,7 +84,9 @@ const HomeScreen = () => {
           <strong className="heading green"> TEAM</strong>
           <p className="desc section-decription" >Teamwork is the ability to work together toward a common vision. The ability to direct individual accomplishments toward organizational objectives. It is the fuel that allows common people to attain uncommon results.</p>
           <Button variant="contained" color="primary" className={classes.btn}>
-           Our Team
+            <Link to="/team" style={{textDecoration:'none', color:'white'}}>
+             Our Team
+            </Link>
           </Button>
         </Grid>
       </Grid>

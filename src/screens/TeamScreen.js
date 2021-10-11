@@ -4,9 +4,11 @@ import { clubLead, coreTeam, mentor } from "../data/MemberData";
 import Profile from '../components/Profile'
 import useStyles from '../commonStyles'
 
+
 const TeamScreen = () => {
     const classes = useStyles()
     return (<>
+
       <Grid container className="team-section" justifyContent="space-around" style={{marginTop:"14vh"}}>
 
         <Grid item sm={12} xsm={12} lg={6} xlg={8} justifyContent="center" alignItems="center" >
