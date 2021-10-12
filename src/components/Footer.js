@@ -8,8 +8,8 @@ import YouTube from '@material-ui/icons/YouTube'
 
 const Footer = (props) => {
   return (
-    <Grid>
-     <Container position="center" padding-left="20px" style={{overflowY:"hidden"}}>
+    <Grid style={{marginTop:"50px"}}>
+     <Container position="center" padding-left="20px" style={{overflowY:"hidden", marginTop:"50px"}}>
       <Box>
         <Container>
         <Grid container alignItems="center">
@@ -20,7 +20,7 @@ const Footer = (props) => {
               alt="/"
             ></img>{" "}
           </Grid>
-          <Grid item > <strong color="grey">GDSC</strong></Grid>
+          <Grid item > <strong color="grey">GDSC </strong></Grid>
           <Grid item> <strong color="black"><bold>BITW</bold></strong></Grid>
         </Grid>
         </Container>
