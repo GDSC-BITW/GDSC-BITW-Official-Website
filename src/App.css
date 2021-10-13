@@ -216,3 +216,92 @@ body {
     width: 30vw;
     
 }
+.evntpage{
+  word-spacing: -3px;
+  position: absolute;
+  top: 25vh;
+  left: 15vh;
+  font-size: 50px;
+  
+}
+.blueclr{
+  color: blue;
+}
+.redclr{
+  color: red;
+}
+.greenclr{
+  color: green;
+}
+.yellowclr{
+  color: yellow;
+}
+.evntpara{
+ 
+  
+  color: #4e4e4e;
+  font-weight: bold;
+  top: 38vh;
+  left: 15vh;
+  position: absolute;
+  font-size: 18px
+  
+  
+}
+.session{
+  
+  word-spacing: -3px;
+  position: absolute;
+  top: 120vh;
+  left: 15vh;
+  font-size: 50px;
+}
+.sessionpara{
+  color: #4e4e4e;
+  font-weight: bold;
+  top: 135vh;
+  left: 15vh;
+  position: absolute;
+  font-size: 18px
+}
+.or{
+  color: #4285F4;
+}
+.proposalpage{
+  position: absolute;
+  top: 200vh;
+  left: 15vh;
+  font-size: 50px;
+}
+.send{
+  color: red;
+}
+.proposal{
+  color: green;
+}
+.para2{
+  position: absolute;
+  top: 215vh;
+  left: 15vh;
+  font-size: 18px;
+  font-weight: bold;
+}
+.form{
+  position: absolute;
+  top: 225vh;
+  left: 15vh;
+  font-weight: bold;
+}
+.box4{
+  height: 10vh;
+}
+.submit{
+  background-color: steelblue;
+  height: 7vh;
+  width: 20vh;
+  position: absolute;
+  top: 50vh;
+  border-style: hidden;
+  font-weight: bold;
+  color: white;
+}
