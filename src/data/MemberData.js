@@ -3,7 +3,8 @@ const clubLead = [
         id: 1,
         Name: "Suyash Dahake",
         Post: "GDSC Lead",
-        backGround: "#4285F4B2"
+        backGround: "#4285F4B2",
+        image: '/images/team/Suyash%20Dahake.png'
     }
 ];
 const coreTeam = [
