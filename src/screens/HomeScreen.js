@@ -13,7 +13,7 @@ const HomeScreen = () => {
       <Background />
       <FallingCircle />
 
-      <Grid container className="hero" direction="column" justifyContent="center" alignItems="center">
+      <Grid container className="hero" direction="column" justifyContent="center" alignItems="center" style={{paddingTop:"10vh"}}>
         <Grid lg={8} xl={8} md={8} sm={12} xsm={12} justifyContent="center" alignItems="center">
           <div>
             <strong className="heading blue">Google  </strong>
@@ -73,7 +73,7 @@ const HomeScreen = () => {
         </Grid>
       </Grid>
 
-      <Grid container spacing={0} className="third-section" justifyContent="space-around">
+      <Grid container spacing={5} className="third-section" justifyContent="center" alignItems="center">
         <Grid item sm={12} xsm={12} lg={4} xlg={4} justifyContent="center" alignItems="center" >
           <img src="../images/asset2.png" alt="aa" className="hero-img" />
         </Grid>

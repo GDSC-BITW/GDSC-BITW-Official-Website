@@ -7,7 +7,7 @@ import Profile from '../components/Profile'
 
 const TeamScreen = () => {
     // const classes = useStyles()
-    return (<>
+    return (<div>
 
       <Grid container className="team-section" justifyContent="space-around" alignItems="center">
         <Grid item sm={12} xsm={12} lg={6} xlg={8} justifyContent="center" alignItems="center" >
@@ -32,7 +32,7 @@ const TeamScreen = () => {
 
       {/* ============================================================= -- Second-Section -- ==================================================================== */}
 
-      <div className="team-block" >
+      <div className="team-block">
 
           {/* ================================================= -- Lead-Section -- ======================================== */}
           <Grid container className="second-section leadSection" justifyContent="start" spacing={7}>
@@ -41,7 +41,7 @@ const TeamScreen = () => {
                   return (
                       <Grid item  md={4} lg={4} xlg={4} sm={12}md={6}><div className="profile-container"> <Profile name={user.Name} role={user.Post} bgColor={user.backGround} image={user.image}/></div></Grid>
                   );
-              })}
+              })} 
           </Grid><br /><br /><br /><br />
 
           {/* ================================================= -- Core-Team-Section -- ======================================== */}
@@ -59,7 +59,7 @@ const TeamScreen = () => {
           {/* ================================================= -- Mentor-Section -- ======================================== */}
 
           <Grid container className="mentor" justifyContent="start" spacing={7}>
-              <Grid item md={10}><div className="title green"><strong style={{fontSize:"1.6625rem"}}>MENTOR TEAM</strong></div></Grid>
+              <Grid item md={10}><div className="title green"><strong style={{fontSize:"1.6625rem"}}>MENTORS</strong></div></Grid>
               {mentor.map((user) => {
                   return (
                       <Grid item md={4} lg={4} xlg={4} sm={12}><div className="profile-container"> <Profile name={user.Name} role={user.Post} bgColor={user.backGround} image={user.image}/></div></Grid>
@@ -67,7 +67,7 @@ const TeamScreen = () => {
               })}
           </Grid>
         </div>
-    </>);
+    </div>);
 }
 
 export default TeamScreen;

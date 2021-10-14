@@ -125,6 +125,9 @@ body {
   padding-right: 9vw;
   height: 100vh;
 }
+.team-block{
+  padding-bottom: 100px; 
+}
 .desc {
   font-weight: 900;
   font-size: 1.0625rem;
