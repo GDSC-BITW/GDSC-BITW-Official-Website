@@ -6,6 +6,8 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import TeamScreen from './screens/TeamScreen'
 import EventsScreen from './screens/EventsScreen'
+import LeaderBoard from './screens/LeaderBoard'
+
 
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
         <Route exact path='/' component={HomeScreen} />
         <Route path='/team' component={TeamScreen} />
         <Route path='/events' component={EventsScreen} />
+        <Route path='/leader' component={LeaderBoard} />
       </Switch>
       <div style={{bottom:0}}><Footer /></div>
 

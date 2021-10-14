@@ -26,7 +26,11 @@ const headersData = [
   {
     label: "Events",
     href: "/events",
-  }
+  },
+  {
+    label: "Leaderboard",
+    href: "/leader",
+  },
 ];
 
 const useStyles = makeStyles(() => ({

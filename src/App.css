@@ -30,6 +30,10 @@ body {
   font-size: 3.5rem;
   font-weight: 900;
 }
+.heading-2{
+  font-size:2.5rem;
+  font-weight: 800;
+}
 .blue {
   color: #4285F4;
 }
@@ -125,6 +129,16 @@ body {
   padding-right: 9vw;
   height: 100vh;
 }
+.leader-section{
+  height: 70vh;
+}
+.events{
+  padding-left: 12vw;
+  padding-right: 12vw;
+}
+.event-sections{
+  padding-bottom: 40px;
+}
 .team-block{
   padding-bottom: 100px; 
 }
@@ -147,6 +161,9 @@ body {
     font-size: 1.0625rem;
   }
   .heading {
+    font-size: 1.9rem;
+  }
+  .heading-2{
     font-size: 1.9rem;
   }
   .desc{
@@ -173,11 +190,11 @@ body {
     width: 300px !important
   }
   .hero-img {
-    display: block;
+    display: none;
     text-align: -webkit-center;
     width: 250px;
     text-align: center;
-    margin-top: 20px
+    margin-top: 20px;
   }
   .community {
     display: flex;
