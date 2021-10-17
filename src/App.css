@@ -140,7 +140,7 @@ body {
   padding-bottom: 40px;
 }
 .team-block{
-  padding-bottom: 100px; 
+  padding-bottom: 100px;
 }
 .desc {
   font-weight: 900;
@@ -234,7 +234,7 @@ body {
     user-select: none;
     height: 40vh;
     width: 30vw;
-    
+
 }
 .evntpage{
   word-spacing: -3px;
@@ -242,7 +242,7 @@ body {
   top: 25vh;
   left: 15vh;
   font-size: 50px;
-  
+
 }
 .blueclr{
   color: blue;
@@ -257,19 +257,19 @@ body {
   color: yellow;
 }
 .evntpara{
- 
-  
+
+
   color: #4e4e4e;
   font-weight: bold;
   top: 38vh;
   left: 15vh;
   position: absolute;
   font-size: 18px
-  
-  
+
+
 }
 .session{
-  
+
   word-spacing: -3px;
   position: absolute;
   top: 120vh;
@@ -324,4 +324,13 @@ body {
   border-style: hidden;
   font-weight: bold;
   color: white;
+}
+.socialLinks {
+  font-weight: 900;
+  font-size: 1.0625rem;
+  color: #4e4e4e;
+  line-height: 30px
+}
+.socialLinks:hover {
+  text-decoration: none !important
 }

@@ -9,97 +9,125 @@ import YouTube from '@material-ui/icons/YouTube'
 const Footer = (props) => {
   return (
     <Grid style={{marginTop:"50px"}}>
-     <Container position="center" padding-left="20px" style={{overflowY:"hidden", marginTop:"50px"}}>
-      <Box>
-        <Container>
-        <Grid container alignItems="center">
-          <Grid item>
-            <img
-              src="/images/logo.png"
-              style={{ height: "60px" }}
-              alt="/"
-            ></img>{" "}
-          </Grid>
-          <Grid item > <strong color="grey">GDSC </strong></Grid>
-          <Grid item> <strong color="black"><bold>BITW</bold></strong></Grid>
-        </Grid>
-        </Container>
 
         <Container>
-        <Grid container style={{ marginBottom:'20px'}}>
-          <Grid item style={{ marginBottom:'20px'}}>
-            <Link href="/" style={{color:'black', marginBottom:'20px'}}>gdsc.bitw@gmail.com</Link>
-          </Grid>
+
+        <hr style={{ marginBottom:'15px'}} />
+        <Grid container style={{ marginBottom:'15px'}}>
+
           <Grid container direction="row">
+          <Grid item>
+            <p className="desc " style={{marginRight:'20px'}}>Follow Us On : </p>
+          </Grid>
             <Grid item>
-              <LinkedIn className="social" style={{paddingRight:'7px'}}/>
+              <LinkedIn className="social" style={{paddingRight:'9px'}}/>
             </Grid>
             <Grid item>
-              <Instagram className="social" style={{paddingRight:'7px'}}/>
+              <Instagram className="social" style={{paddingRight:'9px'}}/>
             </Grid>
             <Grid item>
-              <Twitter className="social" style={{paddingRight:'7px'}}/>
+              <Twitter className="social" style={{paddingRight:'9px'}}/>
             </Grid>
             <Grid item>
-              <YouTube className="social" style={{paddingRight:'7px'}}/>
+              <YouTube className="social" style={{paddingRight:'9px'}}/>
             </Grid>
         </Grid>
         </Grid>
+        <hr />
         </Container>
-        <Container>
+        <Container >
         <Grid container>
-          <Grid item xs={12} sm={4}>
-            <Box borderBottom={1}>
+          <Grid item xs={12} sm={4} style={{marginTop:"30px"}}>
+            <Box>
               <h2>
-                <strong style={{fontSize:"1.6625rem"}} className="heading green">CONTENT</strong>
+                <strong style={{fontSize:"1.3625rem"}} className="heading green">ABOUT</strong>
               </h2>
             </Box>
             <Box>
-              <Link href="/" color="" style={{color:"black"}}>
-                Home
+              <Link href="/" color="" className="socialLinks">
+                Bajaj Institute Of Technology
               </Link>
             </Box>
             <Box>
-              <Link href="/" color="" style={{color:"black"}}>
-                Opportunities
+              <Link href="/" color="" className="socialLinks">
+                Developers Student Club
               </Link>
             </Box>
             <Box>
-              <Link href="/" color="" style={{color:"black"}}>
-                Partners
+              <Link href="/" color="" className="socialLinks">
+                Winter of Code
               </Link>
             </Box>
             <Box>
-              <Link href="/" color="" style={{color:"black"}}>
-                Our Team
+              <Link href="/" color="" className="socialLinks">
+                Google Developers Groups
               </Link>
             </Box>
           </Grid>
-          <Grid item xs={12} sm={4}>
-            <Box borderBottom={1}>
+          <Grid item xs={12} sm={4} style={{marginTop:"30px"}}>
+            <Box>
             <h2>
-                <strong style={{fontSize:"1.6625rem"}} className="heading yellow">ABOUT US</strong>
+                <strong style={{fontSize:"1.6625rem"}} className="heading blue">RESOURCES</strong>
               </h2>
             </Box>
             <Box>
-              <Link href="/" color="" style={{color:"black"}}>
-                BIT,wardha
+              <Link href="/" color=""  className="socialLinks">
+                Intro 2 ML
               </Link>
             </Box>
             <Box>
-              <Link href="/" color="" style={{color:"black"}}>
-                RSVP
+              <Link href="/" color=""  className="socialLinks">
+                GDSC BITW YouTube Channel
+              </Link>
+            </Box>
+            <Box>
+              <Link href="/" color=""  className="socialLinks">
+                30 Days of Google Cloud
+              </Link>
+            </Box>
+            <Box>
+              <Link href="/" color=""  className="socialLinks">
+                GDSC BITW Instagram
+              </Link>
+            </Box>
+            <Box>
+              <Link href="/" color=""  className="socialLinks">
+                GDSC BITW Discord
+              </Link>
+            </Box>
+
+          </Grid>
+
+          <Grid item xs={12} sm={4} style={{marginTop:"30px"}}>
+            <Box>
+            <h2>
+                <strong style={{fontSize:"1.6625rem"}} className="heading red">DEVELOPERS CONSOLE</strong>
+              </h2>
+            </Box>
+            <Box>
+              <Link href="/" color=""  className="socialLinks">
+                GDSC BITW GitHub
+              </Link>
+            </Box>
+            <Box>
+              <Link href="/" color=""  className="socialLinks">
+                Winter Of Code GitHub
+              </Link>
+            </Box>
+            <Box>
+              <Link href="/" color=""  className="socialLinks">
+                Google Developers
               </Link>
             </Box>
           </Grid>
         </Grid>
-        </Container>
+        <hr style={{marginTop:"40px"}}/>
 
-      </Box>
-
-        <Box textAlign="center" paddingBottom="10px" marginTop="30px" marginBottom="10px">
-        © Developers Student Club | Bajaj Institute Of Technology, Wardha. All Rights Reserved &reg; {new Date().getFullYear()}
-        </Box>
+        <Grid container textAlign="center" alignItems="center"  style={{marginTop:'20px', marginBottom:'20px'}}>
+        <p className="desc" style={{fontSize:'1.6rem', marginLeft:'60px'}}>GDSC BITW</p>
+        <p className="desc" style={{fontSize:'1.1rem', marginLeft:'60px'}}>Code Of Conduct</p>
+        <p className="desc" style={{fontSize:'1.1rem', marginLeft:'60px'}}>{new Date().getFullYear()}</p>
+        </Grid>
         </Container>
 
     </Grid>
