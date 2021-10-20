@@ -40,6 +40,7 @@ const useStyles = makeStyles(() => ({
     paddingLeft: "118px",
     "@media (max-width: 900px)": {
       paddingLeft: 0,
+      paddingRight:0,
     },
   },
   active: {
@@ -112,6 +113,7 @@ export default function Header() {
     return (
       <Toolbar>
         <Grid container direction="row" justifyContent="space-between" alignItems="center">
+        
           <Drawer
             {...{
               anchor: "left",
@@ -121,8 +123,6 @@ export default function Header() {
           >
             <div className={drawerContainer}>{menusMobile()}</div>
           </Drawer>
-
-          <img src="/images/logo.png" style={{height:"70px"}} alt="" />
           <IconButton
             {...{
               edge: "start",
@@ -134,6 +134,9 @@ export default function Header() {
           >
             <MenuIcon />
           </IconButton>
+          
+          <img src="/images/logo.png" style={{height:"70px"}} alt="" />
+          
         </Grid>
       </Toolbar>
     );

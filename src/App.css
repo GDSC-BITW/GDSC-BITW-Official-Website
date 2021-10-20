@@ -185,6 +185,10 @@ body {
     padding-right: 9vw;
     flex-direction: column
   }
+  .events{
+    padding-left: 8vw;
+    padding-right: 8vw;
+  }
   .teamimg {
     width: 300px !important
   }
