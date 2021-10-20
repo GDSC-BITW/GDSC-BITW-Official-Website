@@ -4,23 +4,36 @@ import {Grid, Typography, Button, Item, Box, Container, Paper} from '@material-u
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import TwitterIcon from '@material-ui/icons/Twitter';
+import "./eventcard.css";
 
-const eventCard = () => {
+const EventCard = () => {
+
+  const upcomingEvents = [
+    {date :"Oct 28, 2021 - 11:00 AM (IST)" , name:"Road to Google Cloud Certifications",venue:"Online",rsvp:"https://www.youtube.com/watch?v=_IyFdrIV_r0"},
+  ]
 
     return (<>
+      {
+        upcomingEvents.map((data)=>{
+          return(
+            <Grid className="event-card" alignItems="center" direction="row" >
+                      <Grid item style={{padding:"35px 30px",}} >
+                          <div className="date">{data.date}</div>
 
-      <Grid container className="profile-card" alignItems="center" direction="row">
-          <Grid item style={{marginLeft:"20px"}} >
-              <span className="avtar-title desc"></span> Hello<br /><span className="avtar-post desc">Name</span>
-              <br /><br />
-              <div className="icon-container">
-                Nikhil Tidke
-              </div>
-
-          </Grid>
-      </Grid>
+                          <div className="event-name">{data.name}</div>
+                    
+                          <div className="event-venue">{data.venue}</div>
+                          <a href={data.rsvp} className="see-more">
+                            <strong>RSVP</strong>
+                          </a>
+                      </Grid>
+            </Grid>
+          )
+        })
+      }
+      
 
     </>);
 }
 
-export default eventCard;
+export default EventCard;

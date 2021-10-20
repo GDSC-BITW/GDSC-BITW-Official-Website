@@ -2,12 +2,13 @@ import {Grid} from '@material-ui/core/';
 import React from 'react'
 import eventCard from '../components/eventCard'
 import Table from "../components/Table";
+import EventCard from "../components/eventCard";
 
 const Events = (props) => {
   
 return(
   <div>
-    <Grid container className="team-section" justifyContent="center" alignItems="center">
+    <Grid container className="team-section" justifyContent="space-around" alignItems="center">
         <Grid item sm={12} xsm={12} lg={6} xlg={8} justifyContent="center" alignItems="center" >
           <strong className="heading blue">HACKATHONS</strong>
           <strong className="heading red"> STUDY-JAMS</strong>
@@ -31,17 +32,18 @@ return(
       <Grid container class="events" justifyContent="start" alignItems="left" direction="row">
           <Grid item sm={12} xsm={12} lg={6} xlg={8} className="event-sections" justifyContent="start" alignItems="left">
             <strong className="heading-2">Our </strong> <strong className="heading-2 blue">Events</strong>
-            <p className="desc section-decription" >Questions? Please contact <a href=""> lead@dscbitw.com</a></p>
+            <p className="desc section-decription" >Questions? Please contact <a href=""> lead@gdscbitw.study</a></p>
           </Grid>
 
           <Grid item sm={12} xsm={12} lg={6} xlg={8} className="event-sections" justifyContent="start" alignItems="left" >
           <strong className="heading-2">Our Future </strong> <strong className="heading-2 blue">Events & Meetups</strong>
             <p className="desc section-decription" >Events are listed in reverse chronological order by date.</p>
             <br/>
+            <EventCard/>
           </Grid>
           
           <Grid item sm={12} xsm={12} lg={6} xlg={8} className="event-sections" justifyContent="start" alignItems="left" >
-          <strong className="heading-2">Directory of</strong> <strong className="heading-2 blue">Past Events</strong>
+          <strong className="heading-2">Directory of </strong> <strong className="heading-2 blue">Past Events</strong>
             <p className="desc section-decription" >Events are listed in reverse chronological order by date.</p>
             <br/>
             <Table/>

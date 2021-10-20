@@ -7,6 +7,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
+import { unstable_renderSubtreeIntoContainer } from 'react-dom';
 
 const columns = [
   { id: 'name', label: 'Name', minWidth: 170 },
@@ -14,22 +15,22 @@ const columns = [
     id: 'date',
     label: 'Date',
     minWidth: 170,
-    align: 'right',
+    align: 'left',
     format: (value) => value.toLocaleString('en-US'),
   },
   {
     id: 'venue',
     label: 'Venue',
     minWidth: 170,
-    align: 'right',
+    align: 'left',
     format: (value) => value.toLocaleString('en-US'),
   },
   {
     id: 'see_more',
     label: 'See More',
-    minWidth: 170,
-    align: 'right',
-    format: (value) => value.toFixed(2),
+    minWidth: 70,
+    align: 'left',
+    format: (value) => value.toFixed('en-US'),
   },
 ];
 
@@ -38,21 +39,13 @@ function createData(name, date, venue, see_more) {
 }
 
 const rows = [
-  createData('India', 'IN', 1324171354, 3287263),
-  createData('China', 'CN', 1403500365, 9596961),
-  createData('Italy', 'IT', 60483973, 301340),
-  createData('United States', 'US', 327167434, 9833520),
-  createData('Canada', 'CA', 37602103, 9984670),
-  createData('Australia', 'AU', 25475400, 7692024),
-  createData('Germany', 'DE', 83019200, 357578),
-  createData('Ireland', 'IE', 4857000, 70273),
-  createData('Mexico', 'MX', 126577691, 1972550),
-  createData('Japan', 'JP', 126317000, 377973),
-  createData('France', 'FR', 67022000, 640679),
-  createData('United Kingdom', 'GB', 67545757, 242495),
-  createData('Russia', 'RU', 146793744, 17098246),
-  createData('Nigeria', 'NG', 200962417, 923768),
-  createData('Brazil', 'BR', 210147125, 8515767),
+  createData('Info Session: Winter of Code 2.0', 'Oct 14, 2021 - 4:00 PM (IST)', 'Online', 'https://www.youtube.com/watch?v=_LZ2K-NgPOg'),
+  createData('Getting Started with Open Source', 'Oct 10, 2021 - 3:00 PM (IST)', 'Online', 'https://www.youtube.com/watch?v=G-js1YDEbIo'),
+  createData('How to optimize your LinkedIN profile', 'Sep 30, 2021 - 5:00 PM (IST)', 'Online', 'https://www.youtube.com/watch?v=KRUA1eOVyZg&t=17s'),
+  createData('Webinar: Investment for Students', 'Sep 26, 2021 - 4:00 PM (IST', 'Online', 'https://www.youtube.com/watch?v=kBfRF0tDQfk&feature=youtu.be'),
+  createData('Info Session : 30 Days of Google Cloud', 'Sep 21, 2021 - 5:00 PM (IST)', 'Online', 'https://www.youtube.com/watch?v=JsV_5eqWggQ'),
+  createData('Introductory Session: Know your GDSC BITW!', 'Aug 25, 2021 - 4:15 PM (IST)', 'Online', 'https://www.youtube.com/watch?v=XjW7HyyIDzE&t=661s'),
+
 ];
 
 export default function StickyHeadTable() {
@@ -67,6 +60,24 @@ export default function StickyHeadTable() {
     setRowsPerPage(+event.target.value);
     setPage(0);
   };
+  
+  const renderButton = (column,value)=>{
+    if(column.label!='See More'){
+      return <TableCell key={column.id} align={column.align}>
+                {column.format && typeof value === 'number'
+                  ? column.format(value)
+                  : value}
+              </TableCell>
+    } else{
+      return <TableCell key={column.id} align={column.align}>
+                  <a href={column.format && typeof value === 'number'
+                      ? column.format(value)
+                      : value}>
+                    See More
+                  </a>
+              </TableCell>
+    }
+  }
 
   return (
     <Paper sx={{ width: '76vw', overflow: 'hidden' }}>
@@ -80,7 +91,7 @@ export default function StickyHeadTable() {
                   align={column.align}
                   style={{ minWidth: column.minWidth }}
                 >
-                 <strong> {column.label} </strong>
+                  <strong>{column.label}</strong>
 
                 </TableCell>
               ))}
@@ -95,11 +106,13 @@ export default function StickyHeadTable() {
                     {columns.map((column) => {
                       const value = row[column.id];
                       return (
-                        <TableCell key={column.id} align={column.align}>
-                          {column.format && typeof value === 'number'
-                            ? column.format(value)
-                            : value}
-                        </TableCell>
+                        renderButton(column,value)
+
+                        // <TableCell key={column.id} align={column.align}>
+                        //   {column.format && typeof value === 'number'
+                        //     ? column.format(value)
+                        //     : value}
+                        // </TableCell>
                       );
                     })}
                   </TableRow>

@@ -1,0 +1,24 @@
+.event-card{
+  width: 300px;
+  height: auto;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 20px;
+}
+.date{
+    margin-top: 5px;
+    font-size: 13px;
+}
+.event-name{
+    margin-top: 5px;
+    font-size: 16px;
+}
+.event-venue{
+    margin-top: 5px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.see-more{
+    text-decoration: none;
+    color:blue;
+    font-size: 15px;
+}

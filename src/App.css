@@ -125,8 +125,8 @@ body {
   margin-bottom: 80px !important;
 }
 .team-section {
-  padding-left: 9vw;
-  padding-right: 9vw;
+  padding-left: 8vw;
+  padding-right: 8vw;
   height: 100vh;
 }
 .leader-section{
@@ -183,7 +183,6 @@ body {
   .team-section {
     padding-left: 9vw;
     padding-right: 9vw;
-    margin-bottom: 19vh;
     flex-direction: column
   }
   .teamimg {
