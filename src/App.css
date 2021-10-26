@@ -183,14 +183,17 @@ body {
   .team-section {
     padding-left: 9vw;
     padding-right: 9vw;
-    flex-direction: column
+    padding-top: 10vh;
+    flex-direction: column;
+    height: 500px !important
   }
   .events{
     padding-left: 8vw;
     padding-right: 8vw;
   }
+
   .teamimg {
-    width: 300px !important
+    width: 0px !important
   }
   .hero-img {
     display: none;

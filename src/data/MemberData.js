@@ -1,3 +1,13 @@
+const teacher = [
+    {
+        id: 1,
+        Name: "Sandesh Jain",
+        Post: "Teacher Coordinator",
+        backGround: "#4285F4B2",
+        image: '/images/team/Sandesh_Jain.png'
+    }
+];
+
 const clubLead = [
     {
         id: 1,
@@ -102,7 +112,7 @@ const mentor = [
         Name: "Tanushree Dhongale ",
         Post: "Mentor (App Dev)",
         backGround: "#0F9D58B2",
-        image: '../images/team/Amit%20Potdukhe.png'
+        image: '../images/team/Tanushree.png'
 
     },
     {
@@ -130,7 +140,7 @@ const mentor = [
         Name: "Harshal Supare",
         Post: "Mentor (Web Dev)",
         backGround: "#0F9D58B2",
-        image: '../images/team/Amit%20Potdukhe.png'
+        image: '../images/team/Harshal.png'
 
     },
     {
@@ -138,7 +148,7 @@ const mentor = [
         Name: "Prathmesh Tamhan",
         Post: "Mentor (Web Dev)",
         backGround: "#4285F4B2",
-        image: '../images/team/Amit%20Potdukhe.png'
+        image: '../images/team/Prathamesh.png'
     },
     {
         id: 14,
@@ -152,8 +162,8 @@ const mentor = [
         Name: "Sameeksha Vishwakarma",
         Post: "Mento (App Dev)",
         backGround: "#F4B400B2",
-        image: '../images/team/Amit%20Potdukhe.png'
+        image: '../images/team/Sameeksha.png'
     }
 ];
 
-export { clubLead, coreTeam, mentor };
+export { clubLead, coreTeam, mentor, teacher };

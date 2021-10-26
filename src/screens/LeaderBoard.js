@@ -1,5 +1,5 @@
 import {Grid} from '@material-ui/core/';
-import React from 'react'
+import React, {useEffect} from 'react'
 import Paper from '@mui/material/Paper';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -34,11 +34,11 @@ const columns = [
       format: (value) => value.toLocaleString('en-US'),
     },
   ];
-  
+
   function createData(name, date, link,date2) {
     return { name, date, link,date2};
   }
-  
+
   const rows = [
     createData('India', 'IN', 1324171354, 3287263),
     createData('China', 'CN', 1403500365, 9596961),
@@ -58,7 +58,7 @@ const columns = [
   ];
 
 
-const LeaderBoard = (props) => { 
+const LeaderBoard = (props) => {
 
     const [page, setPage] = React.useState(0);
     const [rowsPerPage, setRowsPerPage] = React.useState(10);
@@ -71,6 +71,10 @@ const LeaderBoard = (props) => {
         setRowsPerPage(+event.target.value);
         setPage(0);
     };
+
+    useEffect(()=>{
+      const reader = new FileReader()
+    }, [])
 
     return(
      <div>
