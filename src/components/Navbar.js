@@ -56,8 +56,8 @@ const useStyles = makeStyles(() => ({
     textDecoration:'none',
     color:'black',
     fontFamily: "Poppins",
-    fontWeight: 700,
-    size: "18px",
+    fontWeight: 900,
+    size: "19px",
     marginLeft: "38px",
   },
   toolbar: {
@@ -113,7 +113,7 @@ export default function Header() {
     return (
       <Toolbar>
         <Grid container direction="row" justifyContent="space-between" alignItems="center">
-        
+
           <Drawer
             {...{
               anchor: "left",
@@ -134,9 +134,9 @@ export default function Header() {
           >
             <MenuIcon />
           </IconButton>
-          
+
           <img src="/images/logo.png" style={{height:"70px"}} alt="" />
-          
+
         </Grid>
       </Toolbar>
     );
@@ -211,7 +211,7 @@ export default function Header() {
             to: href
 
           }}>{label}</NavLink>
-        
+
         </Grid>
 
       )

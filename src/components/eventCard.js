@@ -19,9 +19,8 @@ const EventCard = () => {
             <Grid className="event-card" alignItems="center" direction="row" >
                       <Grid item style={{padding:"35px 30px",}} >
                           <div className="date">{data.date}</div>
-
                           <div className="event-name">{data.name}</div>
-                    
+
                           <div className="event-venue">{data.venue}</div>
                           <a href={data.rsvp} className="see-more">
                             <strong>RSVP</strong>
@@ -31,7 +30,7 @@ const EventCard = () => {
           )
         })
       }
-      
+
 
     </>);
 }

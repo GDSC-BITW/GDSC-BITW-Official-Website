@@ -1,6 +1,5 @@
 import {Grid} from '@material-ui/core/';
-import React from 'react';
-import {useEffect} from 'react';
+import React, {useEffect} from 'react'
 import Paper from '@mui/material/Paper';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -35,16 +34,16 @@ const columns = [
       format: (value) => value.toLocaleString('en-US'),
     },
   ];
-  
+
   function createData(name, date, link,date2) {
     return { name, date, link,date2};
   }
-  
-
-  
 
 
-const LeaderBoard = (props) => { 
+
+
+
+const LeaderBoard = (props) => {
 
     const [page, setPage] = React.useState(0);
     const [rowsPerPage, setRowsPerPage] = React.useState(10);
@@ -60,7 +59,7 @@ const LeaderBoard = (props) => {
     };
 
     console.log(data);
-    
+
     const handleChangeRowsPerPage = (event) => {
         setRowsPerPage(+event.target.value);
         setPage(0);
