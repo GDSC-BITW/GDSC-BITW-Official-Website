@@ -86,10 +86,10 @@ const LeaderBoard = (props) => {
     return(
      <div>
         <Grid container className="leader-section" justifyContent="center" alignItems="center">
-            <Grid item style={{ textAlign:"center"}}>
+            <Grid item className="leader-content" style={{ textAlign:"center"}}>
                 <strong className="heading blue">HALL OF FAME</strong> <br/>
                 <strong className="heading-2">30 Days of Google Cloud</strong> <br/>
-                <p style={{padding:"20px 20vh"}} >30 Days of Google Cloud program will provide you an opportunity to kickstart your career in cloud and get hands-on practice on Google Cloud Platform - the tool that powers apps like Google Search, Gmail and YouTube.</p>
+                <p style={{padding:"20px 20px"}} >30 Days of Google Cloud program will provide you an opportunity to kickstart your career in cloud and get hands-on practice on Google Cloud Platform - the tool that powers apps like Google Search, Gmail and YouTube.</p>
             </Grid>
         </Grid>
         <Grid container  justifyContent="center" alignItems="center">

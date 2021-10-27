@@ -10,7 +10,7 @@ const Profile = (props) => {
     return (<>
 
       <Grid container className="profile-card" alignItems="center" direction="row">
-          <div className="avtar" style={{backgroundImage:`url(${props.image})`}}></div>
+          <div className="avtar" style={{backgroundImage:`url(${props.image})`, backgroundColor:`${props.bgColor}`}}></div>
           <Grid item style={{marginLeft:"20px"}} >
               <span className="avtar-title desc">{props.name}</span> <br /><span className="avtar-post desc">{props.role}</span>
               <br /><br />
