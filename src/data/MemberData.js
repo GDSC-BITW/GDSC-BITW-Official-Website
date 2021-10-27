@@ -160,7 +160,7 @@ const mentor = [
     {
         id: 15,
         Name: "Sameeksha Vishwakarma",
-        Post: "Mento (App Dev)",
+        Post: "Mentor (App Dev)",
         backGround: "#F4B400B2",
         image: '../images/team/Sameeksha.png'
     },
