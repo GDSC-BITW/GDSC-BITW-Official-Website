@@ -9,7 +9,7 @@ import "./eventcard.css";
 const EventCard = () => {
 
   const upcomingEvents = [
-    {date :"Nov 12-13, 5:00 PM (EST)" , name:"Ethical Hacking Bootcamp",venue:"Online",rsvp:"https://gdsc.community.dev/events/details/developer-student-clubs-bajaj-institute-of-technology-wardha-presents-ethical-hacking-bootcamp/"},
+    {date :"Nov 12-13, 5:00 PM (EST)" , name:"Ethical Hacking Bootcamp",venue:"Online",rsvp:"https://bit.ly/vclxbit"},
   ]
 
     return (<>
@@ -23,7 +23,7 @@ const EventCard = () => {
 
                           <div className="event-venue">{data.venue}</div>
                           <a href={data.rsvp} className="see-more">
-                            <strong>RSVP</strong>
+                            <strong>Register</strong>
                           </a>
                       </Grid>
             </Grid>
