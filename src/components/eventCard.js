@@ -9,7 +9,7 @@ import "./eventcard.css";
 const EventCard = () => {
 
   const upcomingEvents = [
-    {date :"Nov 12-13, 5:00 PM (EST)" , name:"Ethical Hacking Bootcamp",venue:"Online",rsvp:"https://bit.ly/vclxbit"},
+    {date :"Nov 12-13, 5:00 PM (IST)" , name:"Ethical Hacking Bootcamp",venue:"Online",rsvp:"https://bit.ly/vclxbit"},
   ]
 
     return (<>
