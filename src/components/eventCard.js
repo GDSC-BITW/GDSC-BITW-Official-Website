@@ -9,7 +9,7 @@ import "./eventcard.css";
 const EventCard = () => {
 
   const upcomingEvents = [
-    {date :"Oct 28, 2021 - 11:00 AM (IST)" , name:"Road to Google Cloud Certifications",venue:"Online",rsvp:"https://www.youtube.com/watch?v=_IyFdrIV_r0"},
+    {date :"Nov 12-13, 5:00 PM (EST)" , name:"Ethical Hacking Bootcamp",venue:"Online",rsvp:"https://gdsc.community.dev/events/details/developer-student-clubs-bajaj-institute-of-technology-wardha-presents-ethical-hacking-bootcamp/"},
   ]
 
     return (<>

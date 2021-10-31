@@ -39,13 +39,13 @@ function createData(name, date, venue, see_more) {
 }
 
 const rows = [
+  createData('Road to Google Cloud Certifications', 'Oct 28, 2021 - 11:00 AM (IST)', 'Online', 'https://www.youtube.com/watch?v=_IyFdrIV_r0'),
   createData('Info Session: Winter of Code 2.0', 'Oct 14, 2021 - 4:00 PM (IST)', 'Online', 'https://www.youtube.com/watch?v=_LZ2K-NgPOg'),
   createData('Getting Started with Open Source', 'Oct 10, 2021 - 3:00 PM (IST)', 'Online', 'https://www.youtube.com/watch?v=G-js1YDEbIo'),
   createData('How to optimize your LinkedIN profile', 'Sep 30, 2021 - 5:00 PM (IST)', 'Online', 'https://www.youtube.com/watch?v=KRUA1eOVyZg&t=17s'),
   createData('Webinar: Investment for Students', 'Sep 26, 2021 - 4:00 PM (IST', 'Online', 'https://www.youtube.com/watch?v=kBfRF0tDQfk&feature=youtu.be'),
   createData('Info Session : 30 Days of Google Cloud', 'Sep 21, 2021 - 5:00 PM (IST)', 'Online', 'https://www.youtube.com/watch?v=JsV_5eqWggQ'),
   createData('Introductory Session: Know your GDSC BITW!', 'Aug 25, 2021 - 4:15 PM (IST)', 'Online', 'https://www.youtube.com/watch?v=XjW7HyyIDzE&t=661s'),
-
 ];
 
 export default function StickyHeadTable() {
