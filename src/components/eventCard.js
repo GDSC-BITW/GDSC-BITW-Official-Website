@@ -17,7 +17,7 @@ const EventCard = () => {
       {
         upcomingEvents.map((data)=>{
           return(
-            <Grid className="event-card" alignItems="center" direction="row" >
+            <Grid className="event-card" alignItems="center" direction="row" style={{marginRight:"20px"}} >
                       <Grid item style={{padding:"35px 30px",}} >
                           <div className="date">{data.date}</div>
                           <div className="event-name">{data.name}</div>

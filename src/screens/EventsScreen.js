@@ -39,7 +39,9 @@ return(
           <strong className="heading-2">Our Future </strong> <strong className="heading-2 blue">Events & Meetups</strong>
             <p className="desc section-decription" >Events are listed in reverse chronological order by date.</p>
             <br/>
+            <div style={{display:"flex"}}>
             <EventCard/>
+            </div>
           </Grid>
           
           <Grid item sm={12} xsm={12} lg={12} xlg={12} className="event-sections" justifyContent="start" alignItems="left" >
