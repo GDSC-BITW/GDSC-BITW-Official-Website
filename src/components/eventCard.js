@@ -10,6 +10,7 @@ const EventCard = () => {
 
   const upcomingEvents = [
     {date :"Nov 12-13, 5:00 PM (IST)" , name:"Ethical Hacking Bootcamp",venue:"Online",rsvp:"https://bit.ly/vclxbit"},
+    {date :"Sun, Nov 7, 4:00 PM (IST)" , name:"Winter of Code 2.0 - Introductory Session",venue:"Online",rsvp:"https://gdsc.community.dev/events/details/developer-student-clubs-bajaj-institute-of-technology-wardha-presents-winter-of-code-20-introductory-session/"},
   ]
 
     return (<>
