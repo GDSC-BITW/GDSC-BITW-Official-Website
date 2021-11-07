@@ -9,7 +9,6 @@ import "./eventcard.css";
 const EventCard = () => {
 
   const upcomingEvents = [
-    {date :"Sun, Nov 7, 4:00 PM (IST)" , name:"Winter of Code 2.0 - Introductory Session",venue:"Online",rsvp:"https://gdsc.community.dev/events/details/developer-student-clubs-bajaj-institute-of-technology-wardha-presents-winter-of-code-20-introductory-session/"},
     {date :"Nov 8-14, 6:00 PM (IST)" , name:"Let's Utter With Flutter - 7 Days Flutter Bootcamp",venue:"Online", rsvp:"https://bit.ly/utter-in-flutter"},
     {date :"Nov 12-13, 5:00 PM (IST)" , name:"Ethical Hacking Bootcamp",venue:"Online",rsvp:"https://bit.ly/vclxbit"},  
   ]

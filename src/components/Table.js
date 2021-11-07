@@ -39,6 +39,7 @@ function createData(name, date, venue, see_more) {
 }
 
 const rows = [
+  createData('Winter of Code 2.0 - Introductory Session', 'Sun, Nov 7, 4:00 PM (IST)', 'Online', 'https://www.youtube.com/watch?v=_IyFdrIV_r0'),
   createData('Road to Google Cloud Certifications', 'Oct 28, 2021 - 11:00 AM (IST)', 'Online', 'https://www.youtube.com/watch?v=_IyFdrIV_r0'),
   createData('Info Session: Winter of Code 2.0', 'Oct 14, 2021 - 4:00 PM (IST)', 'Online', 'https://www.youtube.com/watch?v=_LZ2K-NgPOg'),
   createData('Getting Started with Open Source', 'Oct 10, 2021 - 3:00 PM (IST)', 'Online', 'https://www.youtube.com/watch?v=G-js1YDEbIo'),
