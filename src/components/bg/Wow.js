@@ -36,13 +36,13 @@ const Wow = () => {
   };
 
   window.onload = function(e){
-      console.log("hello");
+    handleClick(e);
   };
   
 //   days();
     return(
         <div className="wow">
-        <Button aria-describedby={id}  onClick={handleClick}>
+        <Button aria-describedby={id}  onClick={handleClick} >
             <Badge badgeContent={"new"} color="primary"
             anchorOrigin={{
                 vertical: 'top', 

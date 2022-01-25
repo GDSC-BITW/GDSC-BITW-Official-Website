@@ -16,3 +16,9 @@
     color:blue;
     font-size: 18px;
 }
+
+@media (max-width: 900px){
+    .wow-card{
+        width: 90%;
+    }
+}
