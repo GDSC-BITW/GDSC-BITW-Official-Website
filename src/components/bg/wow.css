@@ -1,0 +1,18 @@
+.wow{
+    position: fixed;
+    margin-top: 80vh;
+    margin-left: 88vw;
+}
+
+.wow-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    padding: 20px;
+}
+.wow-button{
+    text-decoration: none;
+    color:blue;
+    font-size: 18px;
+}

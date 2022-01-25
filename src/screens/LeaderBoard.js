@@ -9,6 +9,9 @@ import TableHead from '@mui/material/TableHead';
 import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
 import data from '../data/data.json';
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+
 
 const columns = [
     { id: 'name', label: 'Name', minWidth: 170 },
@@ -85,6 +88,7 @@ const LeaderBoard = (props) => {
 
     return(
      <div>
+        <Navbar />
         <Grid container className="leader-section" justifyContent="center" alignItems="center">
             <Grid item className="leader-content" style={{ textAlign:"center"}}>
                 <strong className="heading blue">HALL OF FAME</strong> <br/>
@@ -139,6 +143,7 @@ const LeaderBoard = (props) => {
                 />
             </Paper>
         </Grid>
+        <div style={{bottom:0}}><Footer /></div>
      </div>
     )
 }

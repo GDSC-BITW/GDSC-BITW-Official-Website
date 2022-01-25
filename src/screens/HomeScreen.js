@@ -4,15 +4,21 @@ import useStyles from '../commonStyles'
 import Background from '../components/bg/Background'
 import {NavLink, Link } from "react-router-dom";
 import FallingCircle from '../components/bg/FallingCircle'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+import Wow from '../components/bg/Wow'
+
+
 
 const HomeScreen = () => {
   const classes = useStyles()
 
   return(
     <>
+      <Navbar />
       <Background />
       <FallingCircle />
-
+      <Wow/>
       <Grid container className="hero" direction="column" justifyContent="center" alignItems="center" style={{paddingTop:"10vh"}}>
         <Grid lg={8} xl={8} md={8} sm={12} xsm={12} justifyContent="center" alignItems="center">
           <div>
@@ -90,7 +96,7 @@ const HomeScreen = () => {
           </Button>
         </Grid>
       </Grid>
-
+      <div style={{bottom:0}}><Footer /></div>
     </>
     )
 }

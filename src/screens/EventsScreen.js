@@ -3,11 +3,14 @@ import React from 'react'
 import eventCard from '../components/eventCard'
 import Table from "../components/Table";
 import EventCard from "../components/eventCard";
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 const Events = (props) => {
   
 return(
   <div>
+    <Navbar />
     <Grid container className="team-section" justifyContent="space-around" alignItems="center">
         <Grid item sm={12} xsm={12} lg={6} xlg={8} justifyContent="center" alignItems="center" >
           <strong className="heading blue">HACKATHONS</strong>
@@ -52,7 +55,7 @@ return(
           </Grid>
       </Grid>
 
-
+      <div style={{bottom:0}}><Footer /></div>
   </div>
   )
 }

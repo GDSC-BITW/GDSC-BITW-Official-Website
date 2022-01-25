@@ -3,12 +3,15 @@ import {Grid} from '@material-ui/core/';
 import { clubLead, coreTeam, mentor, teacher } from "../data/MemberData";
 import Profile from '../components/Profile'
 // import useStyles from '../commonStyles'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+
 
 
 const TeamScreen = () => {
     // const classes = useStyles()
     return (<div>
-
+         <Navbar />
       <Grid container className="team-section" justifyContent="space-around" alignItems="center">
         <Grid item sm={12} xsm={12} lg={6} xlg={8} justifyContent="center" alignItems="center" >
           <strong className="heading blue">MEET</strong>
@@ -78,6 +81,7 @@ const TeamScreen = () => {
               })}
           </Grid>
         </div>
+        <div style={{bottom:0}}><Footer /></div>
     </div>);
 }
 
