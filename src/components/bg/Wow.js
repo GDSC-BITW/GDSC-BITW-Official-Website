@@ -79,10 +79,8 @@ const Wow = () => {
                 vertical: 'bottom',
                 horizontal: 'left',
             }}
-            sx={{
-                marginRight:"13px",
-                marginTop:"14px"
-            }}
+
+            className="cancel"
             onClick={handleClose}
             >
             <div className='wow-card'>
@@ -92,13 +90,12 @@ const Wow = () => {
                 consisting of a 3 days of <strong> Speaker Sessions / Live Coding / Open Source Projects </strong> webinars covering various topics of latest 
                 technologies and a <strong> Treasure Hunt </strong> game throughout the three days. <strong style={{color:"red"}}>“Treasure to WOW”</strong>. To us developers and tech enthusiasts, 
                 this is much more than a few workshops, it is a place where imagination meets the technology of tomorrow.</Typography>
-                <br/>   
+                
                 <br/>    
                 <Typography align="left" variant="string" >
                      <p style={{ alignItems:"center"}}>February 25-27, 2022 | Online | <strong> {days()}</strong> to go.</p>   
                 </Typography>
                 
-                <br/>   
                 <br/>              
                 <Button variant="outlined" href="https://gdscwow.tech/register" >
                     Register
