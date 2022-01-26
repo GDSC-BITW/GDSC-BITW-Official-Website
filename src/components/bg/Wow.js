@@ -4,9 +4,7 @@ import Popover from '@mui/material/Popover';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Badge from '@mui/material/Badge';
-import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
-import LanguageIcon from '@mui/icons-material/Language';
-
+import CancelIcon from '@mui/icons-material/Cancel';
 const Wow = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -38,7 +36,13 @@ const Wow = () => {
   window.onload = function(e){
     handleClick(e);
   };
-  
+  const but=()=>{
+      return(
+          <div style={{cursor:"pointer"}}>
+              <CancelIcon/>
+          </div>
+      );
+  }
 //   days();
     return(
         <div className="wow">
@@ -66,6 +70,21 @@ const Wow = () => {
                 horizontal: 'right',
             }}
         >
+            <Badge badgeContent={but()}
+            anchorOrigin={{
+                vertical: 'top', 
+                horizontal: 'right',
+            }}
+            transformOrigin={{
+                vertical: 'bottom',
+                horizontal: 'left',
+            }}
+            sx={{
+                marginRight:"13px",
+                marginTop:"14px"
+            }}
+            onClick={handleClose}
+            >
             <div className='wow-card'>
                 <img src="/wow_gif.gif" style={{height:"200px"}} alt="" />
                 
@@ -88,7 +107,7 @@ const Wow = () => {
                    <strong> Register </strong>
                 </a> */}
             </div>
-            
+            </Badge>
         </Popover>
         </div>
         )

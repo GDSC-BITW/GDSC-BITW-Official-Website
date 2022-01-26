@@ -27,7 +27,7 @@ const HomeScreen = () => {
             <strong className="heading yellow">  Student  </strong>
             <strong className="heading green"> Club </strong>
             <br/>
-            Bajaj Institute of Technology, Wardha
+            <strong>Bajaj Institute of Technology, Wardha</strong>
           </div>
           <br/>
            Google Developer Student Clubs (GDSC) are community groups for college and university students interested in
