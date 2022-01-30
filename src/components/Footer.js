@@ -44,7 +44,7 @@ const Footer = (props) => {
               </h2>
             </Box>
             <Box>
-              <Link href="/" color="" className="socialLinks">
+              <Link href="https://bitwardha.ac.in/" color="" className="socialLinks">
                 Bajaj Institute Of Technology
               </Link>
             </Box>
