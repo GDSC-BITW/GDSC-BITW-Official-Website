@@ -7,7 +7,7 @@ import Twitter from '@material-ui/icons/Twitter'
 import YouTube from '@material-ui/icons/YouTube'
 
 //This works
-///CHanges
+///CHanges Works
 
 const Footer = (props) => {
   return (
