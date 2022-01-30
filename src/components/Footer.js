@@ -7,8 +7,6 @@ import Twitter from '@material-ui/icons/Twitter'
 import YouTube from '@material-ui/icons/YouTube'
 
 //This works
-///CHanges Works
-//Changing
 
 
 const Footer = (props) => {
@@ -54,7 +52,7 @@ const Footer = (props) => {
               </Link>
             </Box>
             <Box>
-              <Link href="/" color="" className="socialLinks">
+              <Link href="https://developers.google.com/community/gdsc/" color="" className="socialLinks">
                 Developers Student Club
               </Link>
             </Box>
@@ -64,7 +62,7 @@ const Footer = (props) => {
               </Link>
             </Box>
             <Box>
-              <Link href="/" color="" className="socialLinks">
+              <Link href="https://gdg.community.dev//" color="" className="socialLinks">
                 Google Developers Groups
               </Link>
             </Box>
