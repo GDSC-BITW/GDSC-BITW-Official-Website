@@ -79,7 +79,7 @@ const Footer = (props) => {
               </Link>
             </Box>
             <Box>
-              <Link href="/" color=""  className="socialLinks">
+              <Link href="https://youtube.com/channel/UCgs5hQK1kiKSacIDLnwp27A" color=""  className="socialLinks">
                 GDSC BITW YouTube Channel
               </Link>
             </Box>
@@ -89,12 +89,12 @@ const Footer = (props) => {
               </Link>
             </Box>
             <Box>
-              <Link href="/" color=""  className="socialLinks">
+              <Link href="https://instagram.com/gdsc.bitw?utm_medium=copy_link" color=""  className="socialLinks">
                 GDSC BITW Instagram
               </Link>
             </Box>
             <Box>
-              <Link href="/" color=""  className="socialLinks">
+              <Link href="https://s.gdscbitw.study/Discord" color=""  className="socialLinks">
                 GDSC BITW Discord
               </Link>
             </Box>
