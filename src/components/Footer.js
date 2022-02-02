@@ -6,7 +6,7 @@ import Instagram from '@material-ui/icons/Instagram';
 import Twitter from '@material-ui/icons/Twitter'
 import YouTube from '@material-ui/icons/YouTube'
 
-//This works
+//This works//
 
 
 const Footer = (props) => {
