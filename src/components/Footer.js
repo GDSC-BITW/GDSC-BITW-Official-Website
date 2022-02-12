@@ -108,19 +108,39 @@ const Footer = (props) => {
               </h2>
             </Box>
             <Box>
-              <Link href="/" color=""  className="socialLinks">
-                GDSC BITW GitHub
+              <Link href="https://console.developers.google.com/" color=""  className="socialLinks">
+                Google API Console
               </Link>
             </Box>
             <Box>
-              <Link href="/" color=""  className="socialLinks">
-                Winter Of Code GitHub
+            <Link href="https://console.cloud.google.com/" color=""  className="socialLinks">
+                Google Cloud Platform Console
               </Link>
             </Box>
             <Box>
-              <Link href="/" color=""  className="socialLinks">
-                Google Developers
+            <Link href="https://play.google.com/apps/publish" color=""  className="socialLinks">
+                Google Play Console
               </Link>
+            </Box>
+            <Box>
+              <Link href="https://console.firebase.google.com/" color=""  className="socialLinks">
+                Firebase Console
+              </Link>
+            </Box>
+            <Box>
+              <Link href="https://console.actions.google.com/" color=""  className="socialLinks">
+                Actions on Google Console
+              </Link>
+            </Box>
+            <Box>
+              <Link href="https://cast.google.com/publish" color=""  className="socialLinks">
+                Cast SDK Developer Console
+              </Link>
+            </Box>
+            <Box>
+              <Link href="https://chrome.google.com/webstore/developer/dashboard" color=""  className="socialLinks">
+                Chrome Web Store Dashboard
+                </Link>
             </Box>
           </Grid>
         </Grid>
