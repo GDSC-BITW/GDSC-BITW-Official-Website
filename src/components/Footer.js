@@ -23,7 +23,7 @@ const Footer = (props) => {
             <p className="desc " style={{marginRight:'20px'}}>Follow Us On : </p>
           </Grid>
             <Grid item>
-              <LinkedIn className="social" style={{paddingRight:'9px'}}/>
+              < LinkedIn  className="social"  style={{paddingRight:'9px'}} />
             </Grid>
             <Grid item>
               <Instagram className="social" style={{paddingRight:'9px'}}/>
