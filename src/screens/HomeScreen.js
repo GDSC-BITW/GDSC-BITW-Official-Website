@@ -73,9 +73,17 @@ const HomeScreen = () => {
           <strong className="heading red"> PARTNERS</strong>
         </Grid>
         <Grid lg={10} md={10} sm={12} style={{marginTop:'35px', marginBottom:'40px'}}>
-          <img src="/images/CESPITOSE.png" alt="" className="community-logo"/>
-          <img src="/images/FinFlee.png" alt="" className="community-logo finflee-logo" />
-          <img src="/images/ABC.png" alt="" className="community-logo"/>
+          <img src="/images/CESPITOSE.png" alt=""onClick={ event => window.location.href='https://www.instagram.com/comm.cespitose' } className="community-logo"/>
+          <img src="/images/FinFlee.png" alt=""onClick={ event => window.location.href='https://finflee.co/' } className="community-logo finflee-logo" />
+          <img src="/images/ABC.png" alt=""onClick={ event => window.location.href='https://www.instagram.com/active_buddies_club' } className="community-logo"/>
+          <img src="/images/cantiliver.png" alt=""onClick={ event => window.location.href='https://www.cantileverlabs.com/' } className="community-logo"/>
+          <img src="/images/HACKNITR.png" alt=""onClick={ event => window.location.href='https://www.instagram.com/hacknitr' } className="community-logo"/>
+          <img src="/images/LFC.jpg" alt=""onClick={ event => window.location.href='https://www.linkedin.com/company/learn-for-cause-lfc/' } className="community-logo"/>
+          <img src="/images/vcl.png" alt=""onClick={ event => window.location.href='https://virtualcyberlabs.com/' } className="community-logo"/>
+          <img src="/images/woc.png" alt=""onClick={ event => window.location.href='https://gdsc-woc.tech/' } className="community-logo"/>
+          <img src="/images/WTM-Nagpur.png" alt=""onClick={ event => window.location.href='https://www.instagram.com/wtmnagpur' } className="community-logo"/>
+
+          
         </Grid>
       </Grid>
 

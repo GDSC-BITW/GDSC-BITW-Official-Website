@@ -6,6 +6,9 @@ import Instagram from '@material-ui/icons/Instagram';
 import Twitter from '@material-ui/icons/Twitter'
 import YouTube from '@material-ui/icons/YouTube'
 
+//This works//
+
+
 const Footer = (props) => {
   return (
     <Grid style={{marginTop:"50px"}}>
@@ -20,16 +23,16 @@ const Footer = (props) => {
             <p className="desc " style={{marginRight:'20px'}}>Follow Us On : </p>
           </Grid>
             <Grid item>
-              <LinkedIn className="social" style={{paddingRight:'9px'}}/>
+              < LinkedIn  className="social" onClick={ event => window.location.href='https://www.linkedin.com/company/gdsc-bitw' }  style={{paddingRight:'9px'}} />
             </Grid>
             <Grid item>
-              <Instagram className="social" style={{paddingRight:'9px'}}/>
+              <Instagram className="social" onClick={ event => window.location.href="https://instagram.com/gdsc.bitw?utm_medium=copy_link" } style={{paddingRight:'9px'}}/>
             </Grid>
             <Grid item>
-              <Twitter className="social" style={{paddingRight:'9px'}}/>
+              <Twitter className="social" onClick={ event => window.location.href="https://twitter.com/GDSCBITW?t=AIvdSYq_pYYZ0b1KqeNEsA&s=09" }style={{paddingRight:'9px'}}/>
             </Grid>
             <Grid item>
-              <YouTube className="social" style={{paddingRight:'9px'}}/>
+              <YouTube className="social"onClick={ event => window.location.href="https://youtube.com/channel/UCgs5hQK1kiKSacIDLnwp27A" }  style={{paddingRight:'9px'}}/>
             </Grid>
         </Grid>
         </Grid>
@@ -44,12 +47,12 @@ const Footer = (props) => {
               </h2>
             </Box>
             <Box>
-              <Link href="/" color="" className="socialLinks">
+              <Link href="https://bitwardha.ac.in/" color="" className="socialLinks">
                 Bajaj Institute Of Technology
               </Link>
             </Box>
             <Box>
-              <Link href="/" color="" className="socialLinks">
+              <Link href="https://developers.google.com/community/gdsc/" color="" className="socialLinks">
                 Developers Student Club
               </Link>
             </Box>
@@ -59,7 +62,7 @@ const Footer = (props) => {
               </Link>
             </Box>
             <Box>
-              <Link href="/" color="" className="socialLinks">
+              <Link href="https://gdg.community.dev//" color="" className="socialLinks">
                 Google Developers Groups
               </Link>
             </Box>
@@ -76,7 +79,7 @@ const Footer = (props) => {
               </Link>
             </Box>
             <Box>
-              <Link href="/" color=""  className="socialLinks">
+              <Link href="https://youtube.com/channel/UCgs5hQK1kiKSacIDLnwp27A" color=""  className="socialLinks">
                 GDSC BITW YouTube Channel
               </Link>
             </Box>
@@ -86,12 +89,12 @@ const Footer = (props) => {
               </Link>
             </Box>
             <Box>
-              <Link href="/" color=""  className="socialLinks">
+              <Link href="https://instagram.com/gdsc.bitw?utm_medium=copy_link" color=""  className="socialLinks">
                 GDSC BITW Instagram
               </Link>
             </Box>
             <Box>
-              <Link href="/" color=""  className="socialLinks">
+              <Link href="https://s.gdscbitw.study/Discord" color=""  className="socialLinks">
                 GDSC BITW Discord
               </Link>
             </Box>
@@ -105,19 +108,39 @@ const Footer = (props) => {
               </h2>
             </Box>
             <Box>
-              <Link href="/" color=""  className="socialLinks">
-                GDSC BITW GitHub
+              <Link href="https://console.developers.google.com/" color=""  className="socialLinks">
+                Google API Console
               </Link>
             </Box>
             <Box>
-              <Link href="/" color=""  className="socialLinks">
-                Winter Of Code GitHub
+            <Link href="https://console.cloud.google.com/" color=""  className="socialLinks">
+                Google Cloud Platform Console
               </Link>
             </Box>
             <Box>
-              <Link href="/" color=""  className="socialLinks">
-                Google Developers
+            <Link href="https://play.google.com/apps/publish" color=""  className="socialLinks">
+                Google Play Console
               </Link>
+            </Box>
+            <Box>
+              <Link href="https://console.firebase.google.com/" color=""  className="socialLinks">
+                Firebase Console
+              </Link>
+            </Box>
+            <Box>
+              <Link href="https://console.actions.google.com/" color=""  className="socialLinks">
+                Actions on Google Console
+              </Link>
+            </Box>
+            <Box>
+              <Link href="https://cast.google.com/publish" color=""  className="socialLinks">
+                Cast SDK Developer Console
+              </Link>
+            </Box>
+            <Box>
+              <Link href="https://chrome.google.com/webstore/developer/dashboard" color=""  className="socialLinks">
+                Chrome Web Store Dashboard
+                </Link>
             </Box>
           </Grid>
         </Grid>
