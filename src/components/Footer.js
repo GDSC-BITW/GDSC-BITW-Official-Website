@@ -23,16 +23,16 @@ const Footer = (props) => {
             <p className="desc " style={{marginRight:'20px'}}>Follow Us On : </p>
           </Grid>
             <Grid item>
-              < LinkedIn  className="social"  style={{paddingRight:'9px'}} />
+              < LinkedIn  className="social" onClick={ event => window.location.href='https://www.linkedin.com/company/gdsc-bitw' }  style={{paddingRight:'9px'}} />
             </Grid>
             <Grid item>
-              <Instagram className="social" style={{paddingRight:'9px'}}/>
+              <Instagram className="social" onClick={ event => window.location.href="https://instagram.com/gdsc.bitw?utm_medium=copy_link" } style={{paddingRight:'9px'}}/>
             </Grid>
             <Grid item>
-              <Twitter className="social" style={{paddingRight:'9px'}}/>
+              <Twitter className="social" onClick={ event => window.location.href="https://twitter.com/GDSCBITW?t=AIvdSYq_pYYZ0b1KqeNEsA&s=09" }style={{paddingRight:'9px'}}/>
             </Grid>
             <Grid item>
-              <YouTube className="social" style={{paddingRight:'9px'}}/>
+              <YouTube className="social"onClick={ event => window.location.href="https://youtube.com/channel/UCgs5hQK1kiKSacIDLnwp27A" }  style={{paddingRight:'9px'}}/>
             </Grid>
         </Grid>
         </Grid>
@@ -108,38 +108,18 @@ const Footer = (props) => {
               </h2>
             </Box>
             <Box>
-              <Link href="https://console.developers.google.com/" color=""  className="socialLinks">
-                Google API Console
+              <Link href="/" color=""  className="socialLinks">
+                GDSC BITW GitHub
               </Link>
             </Box>
             <Box>
-              <Link href="https://console.cloud.google.com/" color=""  className="socialLinks">
-                Google Cloud Platform Console
+              <Link href="/" color=""  className="socialLinks">
+                Winter Of Code GitHub
               </Link>
             </Box>
             <Box>
-              <Link href="https://play.google.com/apps/publish" color=""  className="socialLinks">
-                Google Play Console
-              </Link>
-            </Box>
-            <Box>
-              <Link href="https://console.firebase.google.com/" color=""  className="socialLinks">
-                Firebase Console
-              </Link>
-            </Box>
-            <Box>
-              <Link href="https://console.actions.google.com/" color=""  className="socialLinks">
-                Actions on Google Console
-              </Link>
-            </Box>
-            <Box>
-              <Link href="https://cast.google.com/publish" color=""  className="socialLinks">
-                Cast SDK Developer Console
-              </Link>
-            </Box>
-            <Box>
-              <Link href="https://chrome.google.com/webstore/developer/dashboard" color=""  className="socialLinks">
-                Chrome Web Store Dashboard
+              <Link href="/" color=""  className="socialLinks">
+                Google Developers
               </Link>
             </Box>
           </Grid>
