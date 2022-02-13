@@ -39,6 +39,9 @@ function createData(name, date, venue, see_more) {
 }
 
 const rows = [
+  createData('Google Play Academy Study Jam - Store Listening Workshop'),
+  createData('Ethical Hacking Bootcamp', 'Fri, Nov 12-13, 5:00 PM (IST)', 'Online', 'https://www.youtube.com/watch?v=_IyFdrIV_r0'),
+  createData('Lets Utter With Flutter - 7 Days Flutter Bootcamp', 'Mon, Nov 8-14, 6:00 PM (IST)', 'Online', 'https://www.youtube.com/playlist?list=PLV882te6iduA9S0MjUmVfHqRN0NXm7Mr6'),
   createData('Winter of Code 2.0 - Introductory Session', 'Sun, Nov 7, 4:00 PM (IST)', 'Online', 'https://www.youtube.com/watch?v=_IyFdrIV_r0'),
   createData('Road to Google Cloud Certifications', 'Oct 28, 2021 - 11:00 AM (IST)', 'Online', 'https://www.youtube.com/watch?v=_IyFdrIV_r0'),
   createData('Info Session: Winter of Code 2.0', 'Oct 14, 2021 - 4:00 PM (IST)', 'Online', 'https://www.youtube.com/watch?v=_LZ2K-NgPOg'),

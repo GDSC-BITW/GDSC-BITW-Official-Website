@@ -9,8 +9,7 @@ import "./eventcard.css";
 const EventCard = () => {
 
   const upcomingEvents = [
-    {date :"Nov 8-14, 6:00 PM (IST)" , name:"Let's Utter With Flutter - 7 Days Flutter Bootcamp",venue:"Online", rsvp:"https://bit.ly/utter-in-flutter"},
-    {date :"Nov 12-13, 5:00 PM (IST)" , name:"Ethical Hacking Bootcamp",venue:"Online",rsvp:"https://bit.ly/vclxbit"},  
+      
   ]
 
     return (<>
