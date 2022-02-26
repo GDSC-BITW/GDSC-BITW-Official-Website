@@ -57,35 +57,13 @@ const Footer = (props) => {
               </Link>
             </Box>
             <Box>
-              <Link href="/" color="" className="socialLinks">
-                Winter of Code
-              </Link>
-            </Box>
-            <Box>
               <Link href="https://gdg.community.dev//" color="" className="socialLinks">
                 Google Developers Groups
-              </Link>
-            </Box>
-          </Grid>
-          <Grid item xs={12} sm={4} style={{marginTop:"30px"}}>
-            <Box>
-            <h2>
-                <strong style={{fontSize:"1.6625rem"}} className="heading blue">RESOURCES</strong>
-              </h2>
-            </Box>
-            <Box>
-              <Link href="/" color=""  className="socialLinks">
-                Intro 2 ML
               </Link>
             </Box>
             <Box>
               <Link href="https://youtube.com/channel/UCgs5hQK1kiKSacIDLnwp27A" color=""  className="socialLinks">
                 GDSC BITW YouTube Channel
-              </Link>
-            </Box>
-            <Box>
-              <Link href="/" color=""  className="socialLinks">
-                30 Days of Google Cloud
               </Link>
             </Box>
             <Box>
@@ -99,6 +77,34 @@ const Footer = (props) => {
               </Link>
             </Box>
 
+          </Grid>
+          <Grid item xs={12} sm={4} style={{marginTop:"30px"}}>
+            <Box>
+            <h2>
+                <strong style={{fontSize:"1.6625rem"}} className="heading blue">RESOURCES</strong>
+              </h2>
+            </Box>
+            <Box>
+              <Link href="https://events.withgoogle.com/30daysofgooglecloud/program-syllabus/#content" color=""  className="socialLinks">
+                30 Days of Google Cloud
+              </Link>
+            </Box>
+            <Box>
+              <Link href="https://devlibrary.withgoogle.com/" color=""  className="socialLinks">
+              Google Dev Library
+              </Link>
+            </Box>
+            <Box>
+              <Link href="https://developer.android.com/courses/android-basics-kotlin/course" color=""  className="socialLinks">
+              Android Basics in Kotlin
+              </Link>
+            </Box>
+            <Box>
+              <Link href="https://grow.google/intl/en_in/learn-skills/" color=""  className="socialLinks">
+              Grow with Google
+              </Link>
+            </Box>
+            
           </Grid>
 
           <Grid item xs={12} sm={4} style={{marginTop:"30px"}}>
