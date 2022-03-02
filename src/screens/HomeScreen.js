@@ -18,7 +18,7 @@ const HomeScreen = () => {
       <Navbar />
       <Background />
       <FallingCircle />
-      <Wow/>
+      {/* <Wow/> */}
       <Grid container className="hero" direction="column" justifyContent="center" alignItems="center" style={{paddingTop:"10vh"}}>
         <Grid lg={8} xl={8} md={8} sm={12} xsm={12} justifyContent="center" alignItems="center">
           <div>

@@ -26,5 +26,6 @@
         width: 80vw;
         font-size: 16px;
         word-wrap: break-word;
+        padding:40px;
     }
 }
