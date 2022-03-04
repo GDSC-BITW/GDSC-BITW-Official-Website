@@ -4,6 +4,11 @@
   padding: 0;
   font-family: Poppins
 }
+
+.border{
+  border: 2px solid black;
+}
+
 body {
   overflow-x: hidden
 }
@@ -34,6 +39,15 @@ body {
   font-size:2.5rem;
   font-weight: 800;
 }
+.heading-3{
+  font-size:2rem;
+  font-weight: 500;
+}
+.heading-4{
+  font-size:1.2rem;
+  font-weight: 400;
+}
+
 .blue {
   color: #4285F4;
 }
@@ -46,11 +60,21 @@ body {
 .green {
   color:#0F9D58
 }
+
+.center{
+  text-align: center;
+}
+
 .hero {
   height: 100vh;
   font-weight: 900;
   font-size: 1.2625rem;
   color: #4e4e4e;
+}
+.section-center{
+  display: block;
+  width: 100%;
+  padding-left: 30px;
 }
 .sec-section {
   justify-content: center;
@@ -157,6 +181,47 @@ body {
 .section-decription{
   margin-top: 20px !important;
 }
+
+.hack-hero{
+  display: flex;
+  flex-direction: column;
+}
+
+.collab {
+  margin:  20px 0px 10px 0px;
+}
+
+.blueLine{
+  display: block;
+  width: 50%;
+  height: 5px;
+  margin: 30px 0px;
+  border-radius: 5px;
+
+  background-color: #4285F4 ;
+
+}
+
+.aboutHackathon{
+  justify-content: center;
+  align-items: center;
+  max-width: 100vw;
+  margin-left: 50px;
+  margin-bottom: 80px !important;
+}
+
+.domains{
+  text-align: center;
+}
+
+.glimpse-img{
+  display: block;
+  width: 360px;
+  height: 250px;
+  background-size: cover;
+  margin: 20px 0px;
+}
+
 @media (max-width: 900px){
   .hero {
     padding-left: 9vw;
@@ -167,14 +232,20 @@ body {
     font-size: 1.9rem;
   }
   .heading-2{
-    font-size: 1.9rem;
+    font-size: 1.5rem;
+  }
+  .heading-3{
+    font-size: 1.3rem;
+  }
+  .heading-4{
+    font-size:1rem;
   }
   .desc{
     width: 100%;
   }
   .sec-section {
     max-width: 100vw;
-    padding-left: 9vw;
+    padding-left: 6vw;
     padding-right: 9vw;
   }
   .third-section {
@@ -214,6 +285,17 @@ body {
     height: 80px !important;
     margin-left: 30px;
     padding-top: 20px
+  }
+  .aboutHackathon{
+    margin-left: 0px;
+  }
+  
+  .domains{
+    text-align: left;
+  }
+
+  .glimpse-img{
+    margin-left: -10px;
   }
 
 }

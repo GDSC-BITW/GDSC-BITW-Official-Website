@@ -8,6 +8,7 @@ import TeamScreen from './screens/TeamScreen'
 import EventsScreen from './screens/EventsScreen'
 import LeaderBoard from './screens/LeaderBoard'
 import LoginScreen from './dashboard/screens/LoginScreen'
+import HackathonScreen from './screens/Hackathon'
 
 
 
@@ -20,6 +21,7 @@ function App() {
         <Route path='/team' component={TeamScreen} />
         <Route path='/events' component={EventsScreen} />
         <Route path='/leader' component={LeaderBoard} />
+        <Route path='/hackathon' component={HackathonScreen} />
       </Switch>
     </>
   )
