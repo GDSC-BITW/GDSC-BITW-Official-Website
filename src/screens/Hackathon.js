@@ -34,7 +34,7 @@ const HackathonScreen = () => {
                     </Grid>
                     <div className="blueLine "></div>
                     <Grid>
-                        <p className="center heading-3 "><strong >Smart-O-Thon (Internal Hackathon)</strong></p>
+                        <p className="center heading-3 "><strong >BIThon (Internal Hackathon)</strong></p>
                         <p className="center heading-3 "><strong >23 - 25 Feb</strong></p>
 
                     </Grid>
@@ -47,13 +47,13 @@ const HackathonScreen = () => {
                     <img src="../images/asset-3.jpg" alt="aa" className="hero-img" />
                 </Grid>
 
-                <Grid item item sm={12} xsm={12} lg={6} xlg={8} justifyContent="center" alignItems="center" style={{ marginLeft: "20px" }}>
-                    <strong className="heading blue">ABOUT</strong>
-                    <p style={{ marginTop: '-10px' }} >
-                        <strong className="heading red">SMART</strong>
-                        <strong className="heading yellow">-O-</strong>
-                        <strong className="heading green">THON</strong>
-                    </p>
+                <Grid item sm={12} xsm={12} lg={6} xlg={8} justifyContent="center" alignItems="center" style={{ marginLeft: "20px" }}>
+                    <strong className="heading ">
+                        <span className='blue'>ABOUT</span>
+                        <span className='red'> BIT</span>
+                        <span className='yellow'>thon</span>
+                    </strong>
+                    
 
                     <p className="desc section-decription" >Participants will be given a list of domains from which
                         they must choose one and come up with a solution to
