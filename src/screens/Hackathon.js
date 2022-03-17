@@ -91,6 +91,18 @@ const HackathonScreen = () => {
                 </Grid>
             </Grid>
 
+            <Grid className="sponsers" style={{ margin : '50px 0px 100px 0px' }}>
+                        <Grid style={{ margin : '50px 0px' }}>
+                        <p className='center'><strong className='heading blue' >OUR SPONSERS</strong></p>
+                        </Grid>
+
+                        <Grid className='center'>
+                        <img src="/images/Hackathon/GDSCLOGO.png" alt=""onClick={ event => window.location.href='https://gdsc.community.dev/' } className="sponserLogo"/>
+                        <img src="/images/Hackathon/NEWTON-SCHOOL.jpg" alt=""onClick={ event => window.location.href='https://www.newtonschool.co/' } className="sponserLogo" />
+                        <img src="/images/Hackathon/codingBlocks.png" alt=""onClick={ event => window.location.href='https://codingblocks.com/' } className="sponserLogo"/>
+                        </Grid>
+            </Grid>
+
             <Grid container spacing={5} className="section-center">
                 <Grid lg={12} style={{ margin: '50px 0px' }} >
                     <p className='center'><strong className='heading blue' >DOMAINS</strong></p>
