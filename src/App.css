@@ -71,6 +71,13 @@ body {
   font-size: 1.2625rem;
   color: #4e4e4e;
 }
+
+.sponsers{
+  display: block;
+  width: 100vw;
+  height: fit-content;
+}
+
 .section-center{
   display: block;
   width: 100%;
@@ -155,9 +162,6 @@ body {
 }
 .leader-section{
   height: 100vh;
-}
-.leader-section{
-
 }
 .events{
   padding-left: 12vw;
@@ -281,11 +285,14 @@ body {
     padding-left: 9vw;
     padding-right: 9vw;
   }
-  .community-logo {
+  .community-logo, .sponserLogo  {
     height: 80px !important;
     margin-left: 30px;
-    padding-top: 20px
+    padding-top: 20px;
+    cursor: pointer;
   }
+
+
   .aboutHackathon{
     margin-left: 0px;
   }
@@ -299,9 +306,10 @@ body {
   }
 
 }
-.community-logo {
+.community-logo  , .sponserLogo {
   height: 100px;
-  margin-right: 60px
+  margin-right: 60px;
+  cursor:pointer;
 }
 .community {
   margin-bottom: 8vh;
