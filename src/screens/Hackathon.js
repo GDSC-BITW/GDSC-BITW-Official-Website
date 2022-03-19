@@ -51,7 +51,7 @@ const HackathonScreen = () => {
                     <strong className="heading ">
                         <span className='blue'>ABOUT</span>
                         <span className='red'> BIT</span>
-                        <span className='yellow'>thon</span>
+                        <span className='yellow'>hon</span>
                     </strong>
                     
 
