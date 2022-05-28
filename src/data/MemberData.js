@@ -65,7 +65,7 @@ const coreTeam = [
         Name: "Shaikh Abu Basar",
         Post: "Mentor (Video Editing)",
         backGround: "#F4B400B2",
-        image: '../images/team/Amit%20Potdukhe.png'
+        image: '../images/team/abu.jpeg'
     },
     {
         id: 8,
