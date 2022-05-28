@@ -39,6 +39,16 @@ function createData(name, date, venue, see_more) {
 }
 
 const rows = [
+
+  createData('Intro to Machine Learning', 'Sun, May 15, 11:00 AM (IST)', 'ONLINE'),
+  createData('Envolving into a Flutter Developer', 'Sun, Mar 27, 2:00 PM (IST)', 'ONLINE'),
+  createData('BIThon ', 'Mar 23 - 25, 10:00 AM (IST)', 'In-person event'),
+  createData('Roadmap to Flutter with Nikita Gandhi ', 'Sat, Mar 26, 5:00 PM (IST)', 'ONLINE'),
+  createData('Intro to Machine Learning', 'Sun, May 15, 11:00 AM (IST)', 'ONLINE'),
+  createData('Intro to Firebase', 'Thu, May 26, 4:30 PM (IST)', 'ONLINE' ),
+  createData('Deep Dive into Kaggle', 'Tue, May 24, 4:30 PM (IST)', 'ONLINE'),
+  createData('Intro to Kaggle', 'Mon, May 23, 4:30 PM (IST)', 'ONLINE'),
+  createData('Intro to Web Development', 'Mon, May 16, 4:30 PM (IST)', 'ONLINE'),
   createData('Google Play Academy Study Jam - Store Listening Workshop'),
   createData('Ethical Hacking Bootcamp', 'Fri, Nov 12-13, 5:00 PM (IST)', 'Online', 'https://www.youtube.com/watch?v=_IyFdrIV_r0'),
   createData('Lets Utter With Flutter - 7 Days Flutter Bootcamp', 'Mon, Nov 8-14, 6:00 PM (IST)', 'Online', 'https://www.youtube.com/playlist?list=PLV882te6iduA9S0MjUmVfHqRN0NXm7Mr6'),

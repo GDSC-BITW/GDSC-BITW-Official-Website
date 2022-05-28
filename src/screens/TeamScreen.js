@@ -13,7 +13,7 @@ const TeamScreen = () => {
     return (<div>
          <Navbar />
       <Grid container className="team-section" justifyContent="space-around" alignItems="center">
-        <Grid item sm={12} xsm={12} lg={6} xlg={8} justifyContent="center" alignItems="center" >
+        <Grid item sm={12} xsm={12} lg={8} xlg={8} justifyContent="center" alignItems="center" >
           <strong className="heading blue">MEET</strong>
           <strong className="heading red"> OUR</strong>
           <strong className="heading yellow"> AMAZING</strong>
@@ -22,11 +22,11 @@ const TeamScreen = () => {
 
         </Grid>
         <Grid item sm={12} xsm={12} lg={4} xlg={4} justifyContent="center" alignItems="center" >
-          <img src="../images/team1.jpeg" alt="aa" className="teamimg hero-img" />
+          <img style={{zindex:-1}} src="../images/team1.jpeg" alt="aa" className="teamimg hero-img" />
         </Grid>
       </Grid>
 
-      <div class="jsx-1703132234 row teamline">
+      <div class="jsx-1703132234 row teamline" >
         <div style={{height:'15px',width:'25%',padding:0,marginLeft:0,marginRight:0,display:'flex' }}class="jsx-1703132234 bg-yellow"></div>
         <div style={{height:'15px',width:'25%',padding:0,marginLeft:0,marginRight:0,display:'flex' }}class="jsx-1703132234 bg-blue"></div>
         <div style={{height:'15px',width:'25%',padding:0,marginLeft:0,marginRight:0,display:'flex' }}class="jsx-1703132234 bg-red"></div>

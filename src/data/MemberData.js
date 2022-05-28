@@ -53,7 +53,34 @@ const coreTeam = [
         backGround: "#F4B400B2",
         image: '../images/team/raj%20mohije.png'
     },
-
+    {
+        id: 6,
+        Name: "Vishnu Mate",
+        Post: "Mentor (App Dev)",
+        backGround: "#0F9D58B2",
+        image: '../images/team/Vishnu%20Mate.png'
+    },
+    {
+        id: 7,
+        Name: "Shaikh Abu Basar",
+        Post: "Mentor (Video Editing)",
+        backGround: "#F4B400B2",
+        image: '../images/team/Amit%20Potdukhe.png'
+    },
+    {
+        id: 8,
+        Name: "Vaishnavi Kamekar",
+        Post: "Mentor (Graphics Design)",
+        backGround: "#4285F4B2",
+        image: '../images/team/Vaishnavi%20Kamekar.png'
+    },
+    {
+        id: 9,
+        Name: "Shreya Khedkar",
+        Post: "Mentor (Graphics Design)",
+        backGround: "#4285F4B2",
+        image: ''
+    }
 ];
 
 const mentor = [
@@ -81,17 +108,17 @@ const mentor = [
     },
     {
         id: 4,
-        Name: "Vishnu Mate",
-        Post: "Mentor (App Dev)",
-        backGround: "#0F9D58B2",
-        image: '../images/team/Vishnu%20Mate.png'
+        Name: "Tanay Nakhale",
+        Post: "Mentor (IOT)",
+        backGround: "#F4B400B2",
+        image: '../images/team/Tanay%20Nakhale.png'
     },
     {
         id: 5,
-        Name: "Vaishnavi Kamekar",
-        Post: "Mentor (Graphics Design)",
-        backGround: "#4285F4B2",
-        image: '../images/team/Vaishnavi%20Kamekar.png'
+        Name: "Sameeksha Vishwakarma",
+        Post: "Mentor (App Dev)",
+        backGround: "#F4B400B2",
+        image: '../images/team/Sameeksha.png'
     },
     {
         id: 6,
@@ -102,9 +129,9 @@ const mentor = [
     },
     {
         id: 7,
-        Name: "Shaikh Abu Basar",
-        Post: "Mentor (Video Editing)",
-        backGround: "#F4B400B2",
+        Name: "Pragati Thakur",
+        Post: "Mentor (AI/ML)",
+        backGround: "#DB4437B2",
         image: '../images/team/Amit%20Potdukhe.png'
     },
     {
@@ -149,28 +176,10 @@ const mentor = [
         Post: "Mentor (Web Dev)",
         backGround: "#4285F4B2",
         image: '../images/team/Prathamesh.png'
-    },
-    {
-        id: 14,
-        Name: "Pragati Thakur",
-        Post: "Mentor (AI/ML)",
-        backGround: "#DB4437B2",
-        image: '../images/team/Amit%20Potdukhe.png'
-    },
-    {
-        id: 15,
-        Name: "Sameeksha Vishwakarma",
-        Post: "Mentor (App Dev)",
-        backGround: "#F4B400B2",
-        image: '../images/team/Sameeksha.png'
-    },
-    {
-        id: 16,
-        Name: "Tanay Nakhale",
-        Post: "Mentor (IOT)",
-        backGround: "#F4B400B2",
-        image: '../images/team/Tanay%20Nakhale.png'
     }
+    
+    
+    
 ];
 
 export { clubLead, coreTeam, mentor, teacher };
